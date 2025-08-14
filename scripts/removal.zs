@@ -18,6 +18,8 @@ val craftingRemovalByName = [
     "delightful:candle_from_animal_fat",
     "minecraft:soul_torch",
     "biomemakeover:phantom_membrane",
+    "nyfsquiver:gold_quiver_item_craft",
+    "nyfsquiver:diamond_quiver_item_craft",
     // "map_atlases:craft_atlas",
     # Working Stations
     "minecraft:furnace",

@@ -241,3 +241,11 @@ craftingTable.addShaped("witch_eye_reworked", <item:endrem:witch_eye>, [
     [<item:minecraft:potion>.withTag({Potion: "minecraft:strong_turtle_master"}).transformReplace(<item:minecraft:glass_bottle>), enderEye, <item:minecraft:potion>.withTag({Potion: "minecraft:long_invisibility"}).transformReplace(<item:minecraft:glass_bottle>)],
     [empty, <item:minecraft:potion>.withTag({Potion: "minecraft:strong_harming"}).transformReplace(<item:minecraft:glass_bottle>), empty],
 ]);
+
+# Quivers
+
+craftingTable.addShaped("diamond_quiver", <item:nyfsquiver:diamond_quiver>, [
+    [diamond, diamond, <item:minecraft:feather>],
+    [diamond, <item:nyfsquiver:iron_quiver>, diamond],
+    [diamond, diamond, diamond]
+]);
