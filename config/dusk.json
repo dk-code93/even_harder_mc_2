@@ -5,7 +5,7 @@
   },
   "baseMonsterCap": {
     "desc:": "Base monster cap to act upon, this is the value it'll increase from/reduce to at the start/end of the night. Increase this to see more monsters in the world, default(Vanilla): 70",
-    "baseMonsterCap": 70
+    "baseMonsterCap": 90
   },
   "minSleepTime": {
     "desc:": "Min time required to sleep, vanilla min time:12500, Midnight is 18000",
