@@ -1,0 +1,20 @@
+[
+    {
+        "mob": ["biomemakeover:blightbat", 
+                "biomemakeover:glowfish",
+                "biomemakeover:mushroom_trader",
+                "biomemakeover:scuttler",
+                "biomemakeover:ghost",
+                "biomemakeover:cowboy",
+                "biomemakeover:decayed",
+                "biomemakeover:tadpole",
+                "biomemakeover:toad",
+                "biomemakeover:lightning_bug",
+                "biomemakeover:lightning_bug_alternate",
+                "biomemakeover:rootling",
+                "biomemakeover:helmit_crab"
+            ],
+        "when": "onjoin",
+        "result": "deny"
+    }
+]

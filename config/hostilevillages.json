@@ -1,0 +1,58 @@
+{
+  "vanillaVillageChance": {
+    "desc:": "Percentage of how likely normal,non-zombie villages are to spawn. default: 0",
+    "vanillaVillageChance": 0
+  },
+  "hostilePopulationSize": {
+    "desc:": "Set higher to increase the generated population of the hostile village, default: 5",
+    "hostilePopulationSize": 3
+  },
+  "generateLoot": {
+    "desc:": "Whether to generate extra loot for the village, default: true",
+    "generateLoot": false
+  },
+  "debugLog": {
+    "desc:": "Turn on debug messages for spawning, default: false",
+    "debugLog": false
+  },
+  "disableNoEntityDespawnWhenPickingItem": {
+    "desc:": "Disables entities beeing unable to despawn after they get an item equipped, default: true",
+    "disableNoEntityDespawnWhenPickingItem": false
+  },
+  "loottables": {
+    "desc:": "List of loottables to use, default: minecraft:chests/simple_dungeon",
+    "loottables": [
+      "minecraft:chests/simple_dungeon"
+    ]
+  },
+  "allowVanillaVillagerSpawn": {
+    "desc:": "Whether to allow vanilla villagers to spawn at all. default: false",
+    "allowVanillaVillagerSpawn": true
+  },
+  "villagesSpawnEggLoot": {
+    "desc:": "If enabled and vanilla villager spawn is enabled then hostile villages will get a villager spawn egg added to their loot. default: true",
+    "villagesSpawnEggLoot": false
+  },
+  "villageEntityTypes": {
+    "desc:": "List of entity pairs which spawn in villages. Format = entity1;entity2;5;6   5 is the chance of entity2(one in five), 6 is the total weight of this whole entry to be chosen",
+    "villageEntityTypes": [
+      "minecraft:witch;minecraft:zombie_villager;6;5",
+      "minecraft:pillager;minecraft:witch;6;5",
+      "minecraft:witch;minecraft:vindicator;6;5", 
+      "takesapillage:archer;minecraft:illusioner;6;5",
+      "minecraft:pillager;minecraft:illusioner;6;5"
+    ]
+  },
+  "additionalStructures": {
+    "desc:": "Additional structures to add as houses for spawning zombie villages, default: []",
+    "Example for bountiful and waystones support(this bracket does nothing, modify the additionalStructures one further below) ": [
+      "bountiful:village/common/bounty_gazebo",
+      "waystones:village/common/waystone"
+    ],
+    "additionalStructures": []
+  },
+  "additionalStructuresWeight": {
+    "desc:": "Set higher to increase the amount of additional structures generated, note those replace houses, default: 2",
+    "additionalStructuresWeight": 2
+  }
+}

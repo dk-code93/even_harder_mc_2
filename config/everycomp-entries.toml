@@ -1,0 +1,54 @@
+
+#Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
+[types]
+
+	[types.wood_type]
+
+		[types.wood_type.biomemakeover]
+			blighted_balsa = false
+			willow = false
+			swamp_cypress = false
+			ancient_oak = true
+
+	[types.leaves_type]
+
+		[types.leaves_type.biomemakeover]
+			blighted_balsa = false
+			willow = false
+			swamp_cypress = false
+			ancient_oak = true
+
+#Disables specific entries
+[entries]
+
+	[entries.wood_type]
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
+		[entries.wood_type.woodworks]
+			bookshelf = true
+			chiseled_bookshelf = true
+			boards = true
+			chest = true
+			ladder = true
+			beehive = true
+			trapped_chest = true
+
+		[entries.wood_type.friendsandfoes]
+			beehive = true
+
+		[entries.wood_type.another_furniture]
+			table = true
+			flower_box = true
+			shelf = true
+			drawer = true
+			shutter = true
+			bench = true
+			chair = true
+
+	[entries.leaves_type]
+
+		[entries.leaves_type.woodworks]
+			leaf_pile = true
+

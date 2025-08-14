@@ -1,0 +1,21 @@
+{
+    "block": "#farmersdelight:rice_crops",
+    "growth_multiplier": 8,
+    "modifiers": [
+        {
+            "id": "iguanatweaksreborn:sunlight",
+            "min_sunlight": 10,
+            "modifier": 2,
+            "operation": "add"
+        },
+        {
+            "id": "iguanatweaksreborn:season",
+            "seasons": [
+                "WINTER",
+                "SPRING"
+            ],
+            "modifier": -1,
+            "operation": "multiply"
+        }
+    ]
+}

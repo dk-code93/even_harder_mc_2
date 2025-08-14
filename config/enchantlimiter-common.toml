@@ -1,0 +1,22 @@
+
+[enchantability]
+	#how much each point of enchantability in the item will add to its enchantment point pool
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"points per enchantability" = 1.0
+	#if the number of enchantment points falls within this distance to a whole number, it will be rounded to the whole number instead. This allows you to have clean 1/3 or 1/7 for the incremental cost of enchantments.
+	#Range: 0.0 ~ 1.0
+	granularity = 0.1
+	#how many enchantment points an item starts with
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"base points" = 2.0
+	#the default cost to add a new enchantment onto an item.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"base cost" = 0.0
+	#the default cost to add one level to any existing enchantment on the item. An enchantment with level 1 will apply both the base cost and the incremental cost, once each.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	"incremental cost" = 2.0
+	#Items that have their own enchantment point cap. Format is name, base enchantability, increment per extra point of enchantability.
+	"custom items" = ["minecraft:fishing_rod, 30, 0", "minecraft:bow, 12, 0", "minecraft:trident, 16, 0", "minecraft:crossbow, 16, 0", "minecraft:enchanted_book, 30, 0", "minecraft:book, 30, 0", "minecraft:shield, 9, 0", "shieldexp:wooden_shield, 17, 0", "shieldexp:golden_shield, 24, 0", "shieldexp:iron_shield, 16, 0", "shieldexp:diamond_shield, 12, 0", "shieldexp:netherite_shield, 17, 0", "shieldexp:paragon_shield, 10, 0", "shieldexp:griefer_shield, 10, 0", "nyfsquiver:basic_quiver, 6, 0", "nyfsquiver:iron_quiver, 6, 0", "nyfsquiver:copper_quiver, 12, 0", "nyfsquiver:gold_quiver, 16, 0", "nyfsquiver:diamond_quiver, 8, 0", "nyfsquiver:netherite_quiver, 8, 0"]
+	#It's really irritating how nightconfig doesn't keep the entries in separate lines, but alas. Define enchantments here. Format is name, base cost, incremental cost.
+	enchantments = ["minecraft:mending, 8, 0", "minecraft:silk_touch, 4, 0", "allurement:alleviating, 6, 0", "allurement:reforming, 8, 0", "majruszsenchantments:immortality, 10, 0", "majruszsenchantments:gold_fuelled, 4, 0", "allurement:obedience, 1, 0", "majruszsenchantments:leech, 7, 0", "majruszsenchantments:telekinesis, 3, 0", "nyfsquiver:meld_enchant, 1, 0", "minecraft:multishot, 4, 0", "minecraft:channeling, 6, 0", "nyfsquiver:quinfinity_enchant, 8, 0", "minecraft:binding_curse, -6, 0", "minecraft:vanishing_curse, -2, 0", "majruszsenchantments:slippery_curse, -5, 0", "majruszsenchantments:corrosion_curse, -4, 0", "biomemakeover:decay_curse, 0, -2", "majruszsenchantments:fatigue_curse, 0, -2", "biomemakeover:insomnia_curse, 0, -2", "biomemakeover:conductivity_curse, 0, -2", "biomemakeover:suffocation_curse, 0, -2", "biomemakeover:buckling_curse, 0, -2", "biomemakeover:enfeeblement_curse, 0, -2", "biomemakeover:depth_curse, 0, -2", "biomemakeover:flammability_curse, 0, -2", "biomemakeover:unwieldiness_curse, 0, -2", "biomemakeover:inaccuracy_curse, 0, -2"]
+

@@ -1,0 +1,20 @@
+{
+    "block": "minecraft:pitcher_crop",
+    "growth_multiplier": 5,
+    "modifiers": [
+        {
+            "id": "iguanatweaksreborn:sunlight",
+            "min_sunlight": 10,
+            "modifier": 2,
+            "operation": "add"
+        },
+        {
+            "id": "iguanatweaksreborn:season",
+            "seasons": [
+                "WINTER"
+            ],
+            "modifier": -1,
+            "operation": "multiply"
+        }
+    ]
+}
