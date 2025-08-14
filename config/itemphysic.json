@@ -84,6 +84,10 @@
         "{id:\"item\",item:\"minecraft:netherite_chestplate\"}",
         "{id:\"item\",item:\"minecraft:netherite_leggings\"}",
         "{id:\"item\",item:\"minecraft:netherite_boots\"}",
+        "{id:\"item\",item:\"farmersdelight:netherite_knife\"}",
+        "{id:\"item\",item:\"nethersdelight:netherite_machete\"}",
+        "{id:\"item\",item:\"nyfsquiver:netherite_quiver\"}",
+        "{id:\"item\",item:\"shieldexp:netherite_shield\"}",
         "{block:\"minecraft:netherite_block\",id:\"block\"}"
       ],
       "isWhitelist": false
