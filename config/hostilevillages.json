@@ -38,7 +38,7 @@
     "villageEntityTypes": [
       "minecraft:witch;minecraft:zombie_villager;6;5",
       "minecraft:pillager;minecraft:witch;6;5",
-      "minecraft:witch;minecraft:vindicator;6;5", 
+      "minecraft:witch;minecraft:vindicator;4;3", 
       "takesapillage:archer;minecraft:illusioner;6;5",
       "minecraft:pillager;minecraft:illusioner;6;5"
     ]
