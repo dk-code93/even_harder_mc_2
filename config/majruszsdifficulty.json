@@ -420,9 +420,9 @@
     "highlight_delay": 300.0,
     "extra_size_ratio_per_player": 0.5,
     "area_radius": 70,
-    "kill_requirement": 100,
-    "kill_requirement_first": 25,
-    "kill_requirement_warning": 3,
+    "kill_requirement": 400,
+    "kill_requirement_first": 100,
+    "kill_requirement_warning": 80,
     "waves": [
       {
         "mobs": [
