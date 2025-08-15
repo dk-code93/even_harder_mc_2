@@ -9,7 +9,7 @@ snowSpawnMaxLightLevel: 9
 snowPersistMaxLightLevel: 11
 snowReduceFallDamage: true
 sustainGrassIfLayerMoreThanOne: true
-sneakSnowball: true
+sneakSnowball: false
 fancySnowOnUpperSlab: true
 mobSpawningMaxLayers: 8
 snow-cover:
@@ -20,7 +20,7 @@ snow-cover:
 accumulation:
   naturalMelting: true
   snowAndIceMeltInWarmBiomes: false
-  maxLayers: 8
+  maxLayers: 3
   accumulatesDuringSnowstorm: true
   accumulatesDuringSnowfall: false
 integration:
