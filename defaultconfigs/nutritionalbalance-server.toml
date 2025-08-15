@@ -12,28 +12,28 @@
 		nutrient_initial = 50.0
 		#Boundary between low and target, above which good affects can occur. (default:100.0
 		#Range: 0.0 ~ 1.7976931348623157E308
-		nutrient_level_low_target = 100.0
+		nutrient_level_low_target = 150.0
 		#Boundary between target and high, below which good affects can occur. (default:120.0)
 		#Range: 0.0 ~ 1.7976931348623157E308
-		nutrient_level_target_high = 120.0
+		nutrient_level_target_high = 180.0
 		#Engorgement value, above which bad affects can occur.(default:170.0)
 		#Range: 0.0 ~ 1.7976931348623157E308
-		nutrient_level_engorged = 170.0
+		nutrient_level_engorged = 200.0
 		#Maximum nutrient level. nutrients will cap out at this value no matter how much you eat. (default:180.0)
 		#Range: 0.0 ~ 1.7976931348623157E308
-		nutrient_level_max = 180.0
+		nutrient_level_max = 220.0
 		#Nutrient Increment Rate - rate of nutrient increase relative to food saturation and points. (default:1.0)
 		#Range: 0.0 ~ 1.7976931348623157E308
-		nutrient_increment_rate = 1.0
+		nutrient_increment_rate = 0.5
 		#Nutrient Decay Rate - base rate of nutrient reduction over time relative to player saturation and food level decay. (default:1.0)
 		#Range: 0.0 ~ 1.7976931348623157E308
-		nutrient_decay_rate = 1.0
+		nutrient_decay_rate = 0.5
 		#Nutrient Loss On Death - number of nutrition point lost from each nutrient on death (bottoms out at initial value). (default:10.0)
 		#Range: 0.0 ~ 1.7976931348623157E308
 		nutrient_death_loss = 10.0
 		#Max food value a single nutrient for a food item can contain. Helps prevent OP food mods from making it impossible to keep nutrients balanced. (default:20.0)
 		#Range: 1.0 ~ 1.7976931348623157E308
-		nutrient_max_food_value = 20.0
+		nutrient_max_food_value = 80.0
 		#Number of inventory slots the lunchbox contains. (default: 5)
 		#Range: 1 ~ 9
 		lunchbox_slot_count = 5
@@ -122,7 +122,7 @@
 		#List of simple sugars.
 		sugars_item_list = ["#nourish:sweets"]
 		#List of proteins.
-		protein_item_list = ["#forge:protein", "#forge:milk", "#forge:yogurt", "#forge:nuts", "#nourish:protein"]
+		protein_item_list = ["#forge:protein", "#forge:yogurt", "#forge:nuts", "#nourish:protein"]
 		#List of fruits.
 		fruits_item_list = ["#forge:fruits", "#forge:fruits/berry", "#nourish:fruit"]
 
