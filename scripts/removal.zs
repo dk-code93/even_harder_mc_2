@@ -58,6 +58,7 @@ val craftingRemovalByItem = [
     <item:endrem:witch_eye>,
     # Misc
     <item:sleep_tight:night_bag>,
+    <item:brickfurnace:brick_furnace>
 ] as IItemStack[];
 
 for item in craftingRemovalByItem {
@@ -204,6 +205,9 @@ val toRemoveAndHide = [
     <item:biomemakeover:scuttler_tail>,
     <item:biomemakeover:cattail>,
     <item:biomemakeover:reed>,
+
+    <item:brickfurnace:brick_blast_furnace>,
+    <item:brickfurnace:brick_smoker>,
 ] as IItemStack[];
 
 for item in toRemoveAndHide {

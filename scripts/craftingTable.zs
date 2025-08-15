@@ -8,20 +8,27 @@ import crafttweaker.api.tag.MCTag;
 val brick = <item:minecraft:stone_bricks>;
 val blackstone = <item:minecraft:polished_blackstone_bricks>;
 val clay = <item:minecraft:clay_ball>;
+val clayBrick = <item:minecraft:brick>;
 val empty = <item:minecraft:air>;
 val furnace = <item:minecraft:furnace>;
 val campfire = <item:hardcore_torches:unlit_campfire>;
 
 craftingTable.addShaped('hardcore_furnace', furnace, [
     [brick, brick, brick],
-    [clay, campfire, clay],
+    [brick, campfire, brick],
     [brick, brick, brick]
 ]);
 
 craftingTable.addShaped('hardcore_blackstone_furnace', <item:nethersdelight:blackstone_furnace>, [
     [blackstone, blackstone, blackstone],
-    [clay, campfire, clay],
+    [blackstone, campfire, blackstone],
     [blackstone, blackstone, blackstone]
+]);
+
+craftingTable.addShaped('clay_brick_furnace', <item:brickfurnace:brick_furnace>, [
+    [clayBrick, clayBrick, clayBrick],
+    [clayBrick, campfire, clayBrick],
+    [clayBrick, clayBrick, clayBrick]
 ]);
 
 #Smokers
