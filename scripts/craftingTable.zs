@@ -4,19 +4,39 @@ import crafttweaker.api.recipe.CraftingTableRecipeManager;
 import crafttweaker.api.recipe.MirrorAxis;
 import crafttweaker.api.tag.MCTag;
 
-#Furnaces
 val brick = <item:minecraft:stone_bricks>;
 val blackstone = <item:minecraft:polished_blackstone_bricks>;
+val smoothStone = <item:minecraft:smooth_stone>;
+val cobble = <item:minecraft:cobblestone>;
 val clay = <item:minecraft:clay_ball>;
 val clayBrick = <item:minecraft:brick>;
 val empty = <item:minecraft:air>;
 val furnace = <item:minecraft:furnace>;
 val campfire = <item:hardcore_torches:unlit_campfire>;
+val amethystBlock = <item:minecraft:amethyst_block>;
+val magnetite = <item:spelunkery:raw_magnetite>;
+val diamond = <item:minecraft:diamond>;
+val obsidian = <item:minecraft:obsidian>;
+val redstoneBlock = <item:minecraft:redstone_block>;
+val echoShard = <item:minecraft:echo_shard>;
+val enderEye = <item:minecraft:ender_eye>;
+val gold = <item:minecraft:gold_ingot>;
+val iron = <item:minecraft:iron_ingot>; 
+val membrane = <item:minecraft:phantom_membrane>;
+val starShard = <item:progressivebosses:nether_star_shard>;
+
+#Furnaces
 
 craftingTable.addShaped('hardcore_furnace', furnace, [
-    [brick, brick, brick],
-    [brick, campfire, brick],
-    [brick, brick, brick]
+    [cobble, cobble, cobble],
+    [cobble, campfire, cobble],
+    [smoothStone, smoothStone, smoothStone]
+]);
+
+craftingTable.addShaped('hardcore_blast_furnace', <item:minecraft:blast_furnace>, [
+    [iron, iron, iron],
+    [iron, furnace, iron],
+    [iron, iron, iron],
 ]);
 
 craftingTable.addShaped('hardcore_blackstone_furnace', <item:nethersdelight:blackstone_furnace>, [
@@ -30,26 +50,6 @@ craftingTable.addShaped('clay_brick_furnace', <item:brickfurnace:brick_furnace>,
     [clayBrick, campfire, clayBrick],
     [clayBrick, clayBrick, clayBrick]
 ]);
-
-#Smokers
-// val copperBlock = <item:minecraft:copper_block>;
-// val copperIngot = <item:minecraft:copper_ingot>;
-// val anyLog = <tag:items:minecraft:logs>;
-// val netherBrickBlock = <item:minecraft:nether_bricks>;
-// val quartz = <item:minecraft:quartz>;
-// val quartzBlock = <item:minecraft:quartz_block>;
-
-// craftingTable.addShaped("hardcore_smoker", <item:minecraft:smoker>, [
-//     [anyLog, copperBlock, anyLog],
-//     [copperIngot, furnace, copperIngot],
-//     [anyLog, copperBlock, anyLog]
-// ]);
-
-// craftingTable.addShaped("hardcore_nether_brick_smoker", <item:nethersdelight:nether_brick_smoker>, [
-//     [netherBrickBlock, quartzBlock, netherBrickBlock],
-//     [quartz, <item:nethersdelight:blackstone_furnace>, quartz],
-//     [netherBrickBlock, quartzBlock, netherBrickBlock]
-// ]);
 
 #Glowstone dust from lichen
 val lichen = <item:minecraft:glow_lichen>;
@@ -67,17 +67,6 @@ craftingTable.addShapeless('raw_copper_nugs', <item:spelunkery:raw_copper_nugget
 craftingTable.addShapeless('raw_magnetite_nugs', <item:spelunkery:raw_magnetite_nugget> * 3, [<item:spelunkery:raw_magnetite>]);
 
 #Chunk Loaders
-val amethystBlock = <item:minecraft:amethyst_block>;
-val magnetite = <item:spelunkery:raw_magnetite>;
-val diamond = <item:minecraft:diamond>;
-val obsidian = <item:minecraft:obsidian>;
-val redstoneBlock = <item:minecraft:redstone_block>;
-val echoShard = <item:minecraft:echo_shard>;
-val enderEye = <item:minecraft:ender_eye>;
-val gold = <item:minecraft:gold_ingot>;
-val iron = <item:minecraft:iron_ingot>; 
-val membrane = <item:minecraft:phantom_membrane>;
-val starShard = <item:progressivebosses:nether_star_shard>;
 
 val singleLoader = <item:chunkloaders:single_chunk_loader>;
 val basicLoader = <item:chunkloaders:basic_chunk_loader>;

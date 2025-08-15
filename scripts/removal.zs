@@ -13,6 +13,7 @@ val craftingRemovalByName = [
     # Misc
     "minecraft:bread",
     "minecraft:torch",
+    "minecraft:blast_furnace",
     "naturescompass:natures_compass",
     "delightful:torch_from_animal_oil_bottle",
     "delightful:candle_from_animal_fat",
