@@ -3,62 +3,98 @@
     "entries": [],
     "isWhitelist": false
   },
-  "trackCount": 32,
+  "trackCount": 128,
   "resetOnDeath": true,
   "limitProgressionToSurvival": false,
   "minFoodsToActivate": 0,
   "benefits": [
     {
-      "threshold": 3,
+      "threshold": 7,
       "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:2.0d}"
     },
     {
-      "threshold": 5,
-      "benefit": "{key:\"minecraft:strength\",type:\"eff\",val:0.0d}"
+      "threshold": 14,
+      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:2.0d}"
     },
     {
-      "threshold": 7,
-      "benefit": "{key:\"minecraft:regeneration\",type:\"eff\",val:0.0d}"
+      "threshold": 21,
+      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:2.0d}"
     },
     {
-      "threshold": 10,
-      "benefit": "{key:\"minecraft:speed\",type:\"eff\",val:0.0d}"
+      "threshold": 28,
+      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:2.0d}"
     },
     {
-      "threshold": 13,
-      "benefit": "{key:\"minecraft:generic.armor_toughness\",op:0,type:\"att\",val:2.0d}"
+      "threshold": 35,
+      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:2.0d}"
     },
     {
-      "threshold": 18,
-      "benefit": "{key:\"minecraft:strength\",type:\"eff\",val:1.0d}"
+      "threshold": 42,
+      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:2.0d}"
     },
     {
-      "threshold": 25,
-      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:4.0d}"
+      "threshold": 49,
+      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:2.0d}"
     },
     {
-      "threshold": 31,
-      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:6.0d}"
+      "threshold": 56,
+      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:2.0d}"
+    },
+    {
+      "threshold": 63,
+      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:2.0d}"
+    },
+    {
+      "threshold": 70,
+      "benefit": "{key:\"minecraft:generic.max_health\",op:0,type:\"att\",val:2.0d}"
+    },
+    {
+      "threshold": 80,
+      "benefit": "{key:\"minecraft:generic.attack_speed\",op:0,type:\"att\",val:0.3d}"
+    },
+    {
+      "threshold": 90,
+      "benefit": "{key:\"minecraft:generic.movement_speed\",op:0,type:\"att\",val:0.3d}"
+    },
+    {
+      "threshold": 100,
+      "benefit": "{key:\"minecraft:generic.attack_damage\",op:0,type:\"att\",val:4.0d}"
     }
   ],
-  "shouldExcludedCount": true,
+  "shouldExcludedCount": false,
   "complexityStandardNutrition": 5,
   "complexityStandardSaturation": 0.6,
-  "complexityBenefitEffectModifier": 0.2,
+  "complexityBenefitEffectModifier": 0,
   "complexityNeutralEffectModifier": 0,
-  "complexityHarmEffectModifier": -0.2,
+  "complexityHarmEffectModifier": 0,
   "foodDiversity": [
     {
-      "ingredient": "{id:\"item\",item:\"minecraft:golden_carrot\"}",
+      "ingredient": "{id:\"itemtag\",tag:\"crafttweaker:one_diversity_point\"}",
+      "diversity": 1
+    },
+    {
+      "ingredient": "{id:\"itemtag\",tag:\"crafttweaker:two_diversity_point\"}",
       "diversity": 2
     },
     {
-      "ingredient": "{id:\"item\",item:\"minecraft:golden_apple\"}",
-      "diversity": 2
+      "ingredient": "{id:\"itemtag\",tag:\"crafttweaker:three_diversity_point\"}",
+      "diversity": 3
     },
     {
-      "ingredient": "{id:\"item\",item:\"minecraft:enchanted_golden_apple\"}",
+      "ingredient": "{id:\"itemtag\",tag:\"crafttweaker:four_diversity_point\"}",
+      "diversity": 4
+    },
+    {
+      "ingredient": "{id:\"itemtag\",tag:\"crafttweaker:five_diversity_point\"}",
       "diversity": 5
+    },
+    {
+      "ingredient": "{id:\"itemtag\",tag:\"crafttweaker:six_diversity_point\"}",
+      "diversity": 6
+    },
+    {
+      "ingredient": "{id:\"itemtag\",tag:\"crafttweaker:seven_diversity_point\"}",
+      "diversity": 7
     }
   ]
 }

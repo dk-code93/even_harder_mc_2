@@ -163,3 +163,234 @@ val removeProtein = [
 for item in removeProtein {
     <tag:items:forge:nutrients/proteins>.remove(item);
 }
+
+# Food Diversity
+
+val OnePoint = [
+    <item:minecraft:apple>,
+    <item:minecraft:melon_slice>,
+    <item:minecraft:chorus_fruit>,
+    <item:minecraft:chorus_fruit>,
+    <item:minecraft:carrot>,
+    <item:minecraft:potato>,
+    <item:minecraft:baked_potato>,
+    <item:minecraft:poisonous_potato>,
+    <item:minecraft:beetroot>,
+    <item:minecraft:dried_kelp>,
+    <item:minecraft:beef>,
+    <item:minecraft:cooked_beef>,
+    <item:minecraft:porkchop>,
+    <item:minecraft:cooked_porkchop>,
+    <item:minecraft:mutton>,
+    <item:minecraft:cooked_mutton>,
+    <item:minecraft:chicken>,
+    <item:minecraft:cooked_chicken>,
+    <item:minecraft:rabbit>,
+    <item:minecraft:cooked_rabbit>,
+    <item:minecraft:cod>,
+    <item:minecraft:cooked_cod>,
+    <item:minecraft:salmon>,
+    <item:minecraft:cooked_salmon>,
+    <item:minecraft:tropical_fish>,
+    <item:minecraft:pufferfish>,
+    <item:minecraft:bread>,
+    <item:minecraft:rotten_flesh>,
+    <item:minecraft:spider_eye>,
+    <item:minecraft:beetroot_soup>,
+    <item:minecraft:honey_bottle>,
+    <item:delightful:matcha>,
+    <item:delightful:green_tea_leaf>,
+    <item:delightful:salmonberries>,
+    <item:delightful:animal_fat>,
+    <item:delightful:acorn>,
+    <item:delightful:roasted_acorn>,
+    <item:delightful:cactus_flesh>,
+    <item:delightful:cactus_steak>,
+    <item:delightful:marshmallow_stick>,
+    <item:delightful:cooked_marshmallow_stick>,
+    <item:delightful:raw_goat>,
+    <item:delightful:cooked_goat>,
+    <item:delightful:cantaloupe_slice>,
+    <item:delightful:cantaloupe_popsicle>,
+    <item:farmersdelight:cabbage>,
+    <item:farmersdelight:cabbage_leaf>,
+    <item:farmersdelight:onion>,
+    <item:farmersdelight:tomato>,
+    <item:farmersdelight:tomato_sauce>,
+    <item:farmersdelight:fried_egg>,
+    <item:farmersdelight:wheat_dough>,
+    <item:farmersdelight:raw_pasta>,
+    <item:farmersdelight:pumpkin_slice>,
+    <item:farmersdelight:minced_beef>,
+    <item:farmersdelight:beef_patty>,
+    <item:farmersdelight:chicken_cuts>,
+    <item:farmersdelight:cooked_chicken_cuts>,
+    <item:farmersdelight:bacon>,
+    <item:farmersdelight:cooked_bacon>,
+    <item:farmersdelight:cod_slice>,
+    <item:farmersdelight:cooked_cod_slice>,
+    <item:farmersdelight:salmon_slice>,
+    <item:farmersdelight:cooked_salmon_slice>,
+    <item:farmersdelight:mutton_chops>,
+    <item:farmersdelight:cooked_mutton_chops>,
+    <item:farmersdelight:ham>,
+    <item:farmersdelight:melon_popsicle>,
+    <item:farmersdelight:cooked_rice>,
+    <item:nethersdelight:hoglin_loin>,
+    <item:nethersdelight:hoglin_sirloin>,
+    <item:nethersdelight:hoglin_ear>,
+    <item:nethersdelight:strider_slice>,
+    <item:nethersdelight:ground_strider>,
+    <item:nethersdelight:propelpearl>,
+    <item:endersdelight:mite_crust>,
+    <item:endersdelight:shulker_mollusk>,
+    <item:endersdelight:shulker_filet>,
+] as IItemStack[];
+
+for item in OnePoint {
+    <tag:items:crafttweaker:one_diversity_point>.add(item);
+}
+
+val TwoPoints = [
+    <item:minecraft:mushroom_stew>,
+    <item:minecraft:cookie>,
+    <item:delightful:glow_jam_cookie>,
+    <item:delightful:nut_dough>,
+    <item:delightful:jam_jar>,
+    <item:delightful:glow_jam_jar>,
+    <item:delightful:nut_butter_bottle>,
+    <item:delightful:wrapped_cantaloupe>,
+    <item:farmersdelight:smoked_ham>,
+    <item:farmersdelight:pie_crust>,
+    <item:farmersdelight:sweet_berry_cookie>,
+    <item:farmersdelight:honey_cookie>,
+    <item:farmersdelight:nether_salad>,
+    <item:farmersdelight:egg_sandwich>,
+    <item:farmersdelight:cabbage_rolls>,
+    <item:farmersdelight:salmon_roll>,
+    <item:farmersdelight:cod_roll>,
+    <item:farmersdelight:bone_broth>,
+    <item:farmersdelight:bacon_and_eggs>,
+    <item:nethersdelight:warped_moldy_meat>,
+    <item:nethersdelight:magma_gelatin>,
+    <item:endersdelight:chorus_juice>,
+    <item:endersdelight:endermite_stew>,
+    <item:endersdelight:chorus_stew>,
+] as IItemStack[];
+
+for item in TwoPoints {
+    <tag:items:crafttweaker:two_diversity_point>.add(item);
+}
+
+val ThreePoints = [
+    <item:delightful:matcha_ice_cream>,
+    <item:delightful:matcha_milkshake>,
+    <item:delightful:salmonberry_ice_cream>,
+    <item:delightful:salmonberry_milkshake>,
+    <item:delightful:cactus_soup>,
+    <item:delightful:ender_nectar>,
+    <item:delightful:matcha_latte>,
+    <item:farmersdelight:fruit_salad>,
+    <item:farmersdelight:mixed_salad>,
+    <item:farmersdelight:barbecue_stick>,
+    <item:farmersdelight:stuffed_potato>,
+    <item:farmersdelight:kelp_roll>,
+    <item:farmersdelight:kelp_roll_slice>,
+    <item:farmersdelight:beef_stew>,
+    <item:farmersdelight:fish_stew>,
+    <item:nethersdelight:nether_skewer>,
+    <item:endersdelight:uncanny_cookies>,
+    <item:endersdelight:strange_eclair>,
+    <item:endersdelight:crispy_skewer>,
+    <item:endersdelight:amberveiled_curry>,
+] as IItemStack[];
+
+for item in ThreePoints {
+    <tag:items:crafttweaker:three_diversity_point>.add(item);
+}
+
+val FourPoints = [
+    <item:minecraft:rabbit_stew>,
+    <item:delightful:cactus_chili>,
+    <item:delightful:berry_matcha_latte>,
+    <item:delightful:cantaloupe_bread>,
+    <item:delightful:salmonberry_gummy>,
+    <item:delightful:matcha_gummy>,
+    <item:delightful:cantaloupe_gummy>,
+    <item:farmersdelight:cake_slice>,
+    <item:farmersdelight:glow_berry_custard>,
+    <item:farmersdelight:chicken_sandwich>,
+    <item:farmersdelight:bacon_sandwich>,
+    <item:farmersdelight:mutton_wrap>,
+    <item:farmersdelight:dumplings>,
+    <item:farmersdelight:chicken_soup>,
+    <item:farmersdelight:vegetable_soup>,
+    <item:farmersdelight:fried_rice>,
+    <item:farmersdelight:pumpkin_soup>,
+    <item:farmersdelight:baked_cod_stew>,
+    <item:farmersdelight:noodle_soup>,
+    <item:farmersdelight:pasta_with_meatballs>,
+    <item:farmersdelight:pasta_with_mutton_chop>,
+    <item:farmersdelight:mushroom_rice>,
+    <item:farmersdelight:roasted_mutton_chops>,
+    <item:farmersdelight:steak_and_potatoes>,
+    <item:farmersdelight:ratatouille>,
+    <item:farmersdelight:squid_ink_pasta>,
+    <item:farmersdelight:grilled_salmon>,
+    <item:farmersdelight:dog_food>,
+    <item:nethersdelight:strider_moss_stew>,
+    <item:endersdelight:crawling_sandwich>,
+    <item:endersdelight:twisted_cereal>,
+    <item:endersdelight:pearl_pasta>,
+    <item:endersdelight:ender_paella>,
+    <item:endersdelight:amberveil_stew>,
+    <item:endersdelight:steak_fries>,
+] as IItemStack[];
+
+for item in FourPoints {
+    <tag:items:crafttweaker:four_diversity_point>.add(item);
+}
+
+val FivePoints = [
+    <item:delightful:pumpkin_pie_slice>,
+    <item:delightful:salmonberry_pie_slice>,
+    <item:delightful:baklava_slice>,
+    <item:delightful:field_salad>,
+    <item:delightful:nut_butter_and_jam_sandwich>,
+    <item:delightful:stuffed_cantaloupe>,
+    <item:farmersdelight:apple_pie_slice>,
+    <item:farmersdelight:chocolate_pie_slice>,
+    <item:farmersdelight:hamburger>,
+    <item:farmersdelight:vegetable_noodles>,
+    <item:farmersdelight:shepherds_pie>,
+    <item:nethersdelight:grilled_strider>,
+    <item:endersdelight:stuffed_shulker_bowl>,
+] as IItemStack[];
+
+for item in FivePoints {
+    <tag:items:crafttweaker:five_diversity_point>.add(item);
+}
+
+val SixPoints = [
+    <item:delightful:sinigang>,
+    <item:delightful:cheeseburger>,
+    <item:farmersdelight:roast_chicken>,
+    <item:farmersdelight:stuffed_pumpkin>,
+    <item:farmersdelight:honey_glazed_ham>,
+    <item:nethersdelight:plate_of_stuffed_hoglin_ham>,
+    <item:nethersdelight:plate_of_stuffed_hoglin_roast>,
+    <item:endersdelight:chicken_curry>,
+] as IItemStack[];
+
+for item in SixPoints {
+    <tag:items:crafttweaker:six_diversity_point>.add(item);
+}
+
+val SevenPoints = [
+    <item:delightful:deluxe_cheeseburger>,
+    <item:nethersdelight:plate_of_stuffed_hoglin_snout>,
+] as IItemStack[];
+
+for item in SevenPoints {
+    <tag:items:crafttweaker:seven_diversity_point>.add(item);
+}
