@@ -209,6 +209,9 @@ val toRemoveAndHide = [
 
     <item:brickfurnace:brick_blast_furnace>,
     <item:brickfurnace:brick_smoker>,
+
+    <item:iguanatweaksreborn:red_mushroom_stew>,
+    <item:iguanatweaksreborn:brown_mushroom_stew>,
 ] as IItemStack[];
 
 for item in toRemoveAndHide {
