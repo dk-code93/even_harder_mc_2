@@ -42,7 +42,7 @@
 [slimes]
 	slimes_spawn_in_all_caves = true
 	create_slimes_in_cauldrons = true
-	slimes_friendly_to_players_with_regeneration = true
+	slimes_friendly_to_players_with_regeneration = false
 	slimes_always_friendly = false
 	#Range: 1 ~ 2400
 	slime_eating_cooldown = 150

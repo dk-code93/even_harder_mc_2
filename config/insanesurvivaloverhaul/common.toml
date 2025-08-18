@@ -203,7 +203,7 @@
 		"Time control day night shift" = 1.5
 		"Grow double tall grass" = true
 		"Grow flowers from grass" = false
-		"Prevent grass spreading in autumn and winter" = true
+		"Slowdown grass spreading" = true
 
 	#Trees fall when cut.
 	[World."Timber trees"]
@@ -241,6 +241,8 @@
 		"Caverns chasms deepers" = false
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 		"Knockback multiplier" = 1.0
+		#If true, potion effects from the exploder will be applied to the damaged entities
+		"Apply effect from exploder" = true
 
 	[World."Faster decay leaves"]
 		#Range: > 1
@@ -312,6 +314,7 @@
 		"Tired tied phantoms" = true
 		#If true, Simple Clouds' clouds will speed up when player skips time by sleeping.
 		"Simple clouds integration" = false
+		"Allow sleeping even when not tired" = false
 
 		["Sleep & Respawn".Tiredness."Energy boost"]
 			#If the player has energy boost, reduce tiredness by this value (multiplied by the effect level) each tick.
@@ -345,8 +348,10 @@
 		"Respawn obelisks" = false
 		#If enabled, respawning will try to place you on land and not in fluids
 		"Dont respawn on fluid" = true
-		#If enabled, sleeping a bed when sneaking will overwrite obelisk spawn point
+		#If true, sleeping a bed when sneaking will overwrite obelisk spawn point
 		"Allow obelisk spawn point overwrite with beds sneaking" = false
+		#If true, respawn obelisks will require (and consume) precious blocks to let you respawn
+		"Respawn obelisks require catalyst blocks" = false
 
 		#The range from world spawn where players will respawn.
 		["Sleep & Respawn".Respawn."Loose world spawn range"]
@@ -699,6 +704,8 @@
 		"Tinkers construct" = false
 		#When you add a new mod the game automatically sets the data pack of the mod at the bottom of all the data packs, making the data packs loaded from this mod not work. If this is set to true the enabled and disabled Data Packs of the world are reset and reloaded. WARNING: you'll lose disabled data packs!
 		"Force reload world data packs" = false
+		#If true, the nourishment effect from Farmers' Delight is replaced with Speed or Vigour if Stamina mod is present
+		"Replace f d nourishment effect" = false
 
 	#Beacon has been redesigned to have more effects and range based off blocks used for pyramid. Effects and blocks ranges are controlled via json config in this feature's folder.
 	[Miscellaneous."Beacon & Conduit"]
@@ -712,6 +719,8 @@
 			#If a mob is within this radius from the conduit, it will be dealt the maximum amount of damage.
 			#Range: 0.0 ~ 96.0
 			"Protection max damage distance" = 8.0
+			#If true, conduit effect will no longer speed up mining speed.
+			"Remove haste" = true
 
 	#Various stuff that doesn't fit in any other Feature.
 	[Miscellaneous.Tweaks]

@@ -2,9 +2,19 @@
 ["Config Screen Settings"]
 	#Enable or disable configuration screen to edit in live different Eruannie's mod settings.
 	Config_Screen = true
-	#Change the side in which the banner configuration will be displayed.
+	#Determines which side the banner configuration appears on. This is experimental. There’s no need to modify this value.
 	Mirrored_Banner = true
 	#Select the type of configuration button to display.
 	#Allowed Values: BOOK, BANNER
 	Button_Type = "BANNER"
+	#Turn on/off animations within the config screen.
+	Animations_Enabled = true
+	#When to show in game update notices:
+	#
+	#NONE = Never.
+	#SESSION = Once after the client starts.
+	#WORLD_JOIN = Every time you join a world/server.
+	#
+	#Allowed Values: NONE, SESSION, WORLD_JOIN
+	Update_Notices = "SESSION"
 

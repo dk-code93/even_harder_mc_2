@@ -71,6 +71,11 @@
 	#How many torches are crafted.
 	#Range: > 1
 	torchCraftAmount = 1
+	#0: Right-click torches to pick them up
+	#1: Right-click torches while sneaking to pick them up
+	#2: Torches cannot be picked up by right-clicking
+	#Range: 0 ~ 2
+	takeTorchMode = 2
 
 #Lantern Settings
 [lantern]
