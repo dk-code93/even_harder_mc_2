@@ -57,9 +57,19 @@ val craftingRemovalByItem = [
     // <item:abundant_atmosphere:soul_brazier>,
     # End Eyes
     <item:endrem:witch_eye>,
+    # Equipment
+    <item:minecraft_121_update:copper_helmet_helmet>,
+    <item:iguanatweaksreborn:copper_helmet>,
+    <item:iguanatweaksreborn:copper_chestplate>,
+    <item:iguanatweaksreborn:copper_leggings>,
+    <item:iguanatweaksreborn:copper_boots>,
     # Misc
     <item:sleep_tight:night_bag>,
-    <item:brickfurnace:brick_furnace>
+    <item:brickfurnace:brick_furnace>,
+    <item:minecraft_121_update:copper_plate>,
+    <item:minecraft_121_update:weathered_copper_plate>,
+    <item:minecraft_121_update:exposed_copper_plate>,
+    <item:minecraft_121_update:oxidized_copper_plate>,
 ] as IItemStack[];
 
 for item in craftingRemovalByItem {
