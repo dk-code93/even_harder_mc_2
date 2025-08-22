@@ -66,6 +66,7 @@ val craftingRemovalByItem = [
     # Misc
     <item:sleep_tight:night_bag>,
     <item:brickfurnace:brick_furnace>,
+    <item:spelunkery:parachute>,
     <item:minecraft_121_update:copper_plate>,
     <item:minecraft_121_update:weathered_copper_plate>,
     <item:minecraft_121_update:exposed_copper_plate>,

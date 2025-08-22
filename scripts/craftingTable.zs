@@ -282,3 +282,12 @@ craftingTable.addShaped("horned_copper_helm", <item:minecraft_121_update:copper_
     [<item:minecraft_121_update:copper_horn>, empty, <item:minecraft_121_update:copper_horn>],
     [empty, <item:iguanatweaksreborn:copper_helmet>, empty]
 ]);
+
+# Parachute
+val rope = <item:farmersdelight:rope>;
+
+craftingTable.addShaped("parachute", <item:spelunkery:parachute>, [
+    [membrane, <item:minecraft:leather>, membrane],
+    [rope, empty, rope],
+    [empty, rope, empty]
+]);
