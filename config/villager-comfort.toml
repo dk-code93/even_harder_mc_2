@@ -15,7 +15,7 @@
 	#Comfort value for when the bedroom is at maxBedroomSize
 	maxBedroomSizeComfort = 12
 	#Max number of beds that the villager is okay with having in their bedroom. Going above this number affects comfort according to comfortPerExtraBed
-	bedsThreshold = 2
+	bedsThreshold = 1
 	#Comfort impact for each light level the brightest air block in the bedroom has below preferredBedroomLight
 	comfortPerLessBedroomLight = -5
 	#Comfort impact for each light level the brightest air block in the bedroom has above preferredBedroomLight
