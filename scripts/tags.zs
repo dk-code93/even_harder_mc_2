@@ -1,6 +1,7 @@
 #priority 1
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.IItemStack;
+import crafttweaker.api.world.biome.Biome;
 
 /* <tag:items:forge:nutrients/proteins>.add(<item:collectorsreap:baked_portobello_cap>); */
 # Foods
