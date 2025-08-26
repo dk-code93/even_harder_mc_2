@@ -106,6 +106,8 @@ val tagsToRemove = [
     <tag:worldgen/biome:biomemakeover:has_structure/sunken_ruin>,
     <tag:worldgen/biome:biomemakeover:has_structure/mushroom_house>,
     <tag:worldgen/biome:immersive_weathering:has_loam>,
+    <tag:worldgen/biome:immersive_weathering:has_earthen_clay>,
+    <tag:worldgen/biome:immersive_weathering:has_silt>,
 ] as MCTag[];
 
 for tag in tagsToRemove {
