@@ -152,6 +152,16 @@ loot.modifiers.register(
     CommonLootModifiers.remove(<item:endrem:cold_eye>)
 );
 
+# Move Lost Eye removal
+loot.modifiers.register(
+    "remove_lost_eye",
+    LootConditions.anyOf([
+        LootTableIdLootCondition.create(<resource:endrem:minecraft/chests/abandoned_mineshaft>),
+        LootTableIdLootCondition.create(<resource:minecraft:chests/abandoned_mineshaft>),
+    ]),
+    CommonLootModifiers.remove(<item:endrem:lost_eye>)
+);
+
 // loot.modifiers.register(
 //     "add_cold_eye",
 //     LootConditions.anyOf([
