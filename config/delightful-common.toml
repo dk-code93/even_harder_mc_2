@@ -135,7 +135,7 @@
 	matcha_latte = true
 	matcha_milkshake = true
 	mendosteen_crate = true
-	mini_melon = true
+	mini_melon = false
 	nut_butter_and_jam_sandwich = true
 	nut_butter_bottle = true
 	nut_dough = true
