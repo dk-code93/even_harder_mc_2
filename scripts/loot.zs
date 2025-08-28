@@ -67,21 +67,21 @@ loot.modifiers.register(
 );
 
 # Add Nether Seal 1 to Shipwreck
-loot.modifiers.register(
-    "remove_seal_shard_1",
-    LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/abandoned_mineshaft>)),
-    CommonLootModifiers.remove(<item:nether_remastered:seal_piece_1>)
-);
+// loot.modifiers.register(
+//     "remove_seal_shard_1",
+//     LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/abandoned_mineshaft>)),
+//     CommonLootModifiers.remove(<item:nether_remastered:seal_piece_1>)
+// );
 
-loot.modifiers.register(
-    "add_seal_shard_1_common",
-    LootConditions.anyOf([
-        LootTableIdLootCondition.create(<resource:minecraft:chests/shipwreck_map>),
-        LootTableIdLootCondition.create(<resource:minecraft:chests/shipwreck_supply>),
-        LootTableIdLootCondition.create(<resource:minecraft:chests/shipwreck_treasure>),
-        ]),
-    CommonLootModifiers.addWithChance(<item:nether_remastered:seal_piece_1> % 40)
-);
+// loot.modifiers.register(
+//     "add_seal_shard_1_common",
+//     LootConditions.anyOf([
+//         LootTableIdLootCondition.create(<resource:minecraft:chests/shipwreck_map>),
+//         LootTableIdLootCondition.create(<resource:minecraft:chests/shipwreck_supply>),
+//         LootTableIdLootCondition.create(<resource:minecraft:chests/shipwreck_treasure>),
+//         ]),
+//     CommonLootModifiers.addWithChance(<item:nether_remastered:seal_piece_1> % 40)
+// );
 
 # Move Corrupted Eye to Adjudicator
 loot.modifiers.register(
