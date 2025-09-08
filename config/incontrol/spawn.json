@@ -10,9 +10,9 @@
                 "biomemakeover:lightning_bug",
                 "biomemakeover:lightning_bug_alternate",
                 "biomemakeover:rootling",
+                "biomemakeover:dragonfly",
                 "biomemakeover:helmit_crab"
             ],
-        "when": "onjoin",
         "result": "deny"
     }
 ]

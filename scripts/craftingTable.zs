@@ -291,3 +291,9 @@ craftingTable.addShaped("parachute", <item:spelunkery:parachute>, [
     [rope, empty, rope],
     [empty, rope, empty]
 ]);
+
+# Sparking Flint uses straw
+
+craftingTable.addShapeless("sparker", <item:lititup:sparkling_flint>, [
+    <item:farmersdelight:straw>, <item:minecraft:flint>, <item:minecraft:stick>
+]);

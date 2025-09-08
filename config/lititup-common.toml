@@ -14,7 +14,7 @@
 	#Enable or disable the spawning of the Switchgrass block in newly generated chunks.
 	Switchgrass_Spawn = true
 	#List of items that will ignite Furnace blocks. This list will only accept items with durability.
-	Furnace_Executor_Item_List = ["minecraft:flint_and_steel", "lititup:sparkling_flint"]
+	Furnace_Executor_Item_List = ["minecraft:flint_and_steel", "lititup:sparkling_flint", "hardcore_torches:fire_starter"]
 	#List of blocks that can ignite Furnace block when it's positioned below. Format: 'modid:blockid[:true|false]'
 	#Examples:
 	# - 'minecraft:grass:true'   (Block is considered lit)
@@ -23,7 +23,7 @@
 	#
 	Furnace_Executor_Block_List = ["minecraft:fire", "minecraft:campfire:true", "minecraft:soul_campfire:true", "minecraft:magma_block", "minecraft:lava"]
 	#Custom item consumption for when the player tries to use the Sparkling Flint item. This value can be empty, just keep the brackets.
-	Sparkling_flint_consumption_item = "lititup:switchgrass_fiber"
+	Sparkling_flint_consumption_item = "farmersdelight:straw"
 	#Lit up furnaces success rate for Sparkling Flint item. (0.6 = 60%)
 	#Range: 0.0 ~ 1.0
 	Sparkling_Flint_Jam_Chance = 0.6

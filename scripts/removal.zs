@@ -71,6 +71,7 @@ val craftingRemovalByItem = [
     <item:minecraft_121_update:weathered_copper_plate>,
     <item:minecraft_121_update:exposed_copper_plate>,
     <item:minecraft_121_update:oxidized_copper_plate>,
+    <item:lititup:sparkling_flint>,
 ] as IItemStack[];
 
 for item in craftingRemovalByItem {

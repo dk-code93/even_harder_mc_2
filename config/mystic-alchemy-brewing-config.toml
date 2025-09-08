@@ -1,4 +1,0 @@
-#Mystic Alchemy // Disallowed Effects
-#Disallow the following effects (comma separated potion identifiers, ex minecraft:nausea)
-ma_disallowed_effects = ""
-

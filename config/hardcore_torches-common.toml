@@ -47,30 +47,30 @@
 	#Torches will become unlit when broken.
 	torchesExtinguishWhenBroken = true
 	#Overrides torchesExtinguishWhenBroken. Torches will be fully expended when broken (burnt torch or stick).
-	torchesBurnWhenDropped = true
+	torchesBurnWhenDropped = false
 	#Fully expended torches will drop as sticks rather than burnt torches.
-	burntStick = true
+	burntStick = false
 	#Torches will be affected when in the rain. Will smolder or become unlit depending on torchesSmolder.
 	torchesRain = true
 	#If a torch is in the rain and torchesRain = true, then it will smolder and burn fuel at 1/3rd the normal rate instead of becoming unlit.
 	torchesSmolder = true
 	#If true, torches must be lit after crafting.
-	craftUnlit = false
+	craftUnlit = true
 	#Right click a torch without holding fuel or a lighter to unlight it.
 	handUnlightTorch = false
 	#0: When going underwater, torches in your inventory will be unaffected
 	#1: When going underwater, torches in mainhand or offhand will be extinguished
 	#2: When going underwater, torches in inventory will be extinguished
 	#Range: 0 ~ 2
-	invExtinguishInWater = 2
+	invExtinguishInWater = 1
 	#0: When in rain, torches in your inventory will be unaffected
 	#1: When in rain, torches in mainhand or offhand will be extinguished or smolder
 	#2: When in rain, torches in inventory will be extinguished or smolder
 	#Range: 0 ~ 2
-	invExtinguishInRain = 2
+	invExtinguishInRain = 1
 	#How many torches are crafted.
 	#Range: > 1
-	torchCraftAmount = 1
+	torchCraftAmount = 2
 	#0: Right-click torches to pick them up
 	#1: Right-click torches while sneaking to pick them up
 	#2: Torches cannot be picked up by right-clicking
@@ -110,7 +110,7 @@
 	#Can the fire starter start full-block fires
 	canStartFires = true
 	#Can the fire starter light lanterns
-	canLightLanterns = false
+	canLightLanterns = true
 	#Percentage chance that the fire starter works
 	#Range: 0.0 ~ 1.0
 	starterSuccessChance = 0.33

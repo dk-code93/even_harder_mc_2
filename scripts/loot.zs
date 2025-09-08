@@ -12,6 +12,8 @@ import crafttweaker.api.loot.LootTable;
 import mods.jeitweaker.Jei;
 import crafttweaker.api.item.IItemStack;
 
+print(loot.modifiers);
+
 # Add Nether Crystal to dungeon chests
 loot.modifiers.register(
     "remove_nether_crystal",
@@ -42,11 +44,11 @@ loot.modifiers.register(
 );
 
 # Move Nether Seal 3 to Illusioner
-loot.modifiers.register(
-    "remove_seal_shard_3",
-    LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:entities/evoker>)),
-    CommonLootModifiers.remove(<item:nether_remastered:seal_piece_3>)
-);
+// loot.modifiers.register(
+//     "remove_seal_shard_3",
+//     LootConditions.anyOf(LootTableIdLootCondition.create(<resource:minecraft:entities/evoker>)),
+//     CommonLootModifiers.remove(<item:nether_remastered:seal_piece_3>)
+// );
 
 loot.modifiers.register(
     "add_seal_shard_3_rare",
@@ -189,10 +191,8 @@ loot.modifiers.register(
 loot.modifiers.register(
     "remove_illunite_shards",
     LootConditions.anyOf([
-        LootTableIdRegexLootCondition.create("minecraft:chests/*"),
-        LootTableIdRegexLootCondition.create("minecraft:entities/*"),
-        LootTableIdRegexLootCondition.create("biomemakeover:chests/*"),
-        LootTableIdRegexLootCondition.create("biomemakeover:entities/*")
+        LootTableIdRegexLootCondition.create("minecraft*"),
+        LootTableIdRegexLootCondition.create("biomemakeover*"),
     ]),
     CommonLootModifiers.removeAll(<item:biomemakeover:illunite_shard>)
 );
