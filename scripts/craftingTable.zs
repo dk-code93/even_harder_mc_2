@@ -185,12 +185,23 @@ craftingTable.addShaped("new_soul_torch", <item:minecraft:soul_torch>, [
     [soulBlocks]
 ]);
 
-# Water Bottle Bread Dough
+# Bread Dough
 val wheat = <tag:items:forge:crops/wheat>;
 val waterBottle = <item:minecraft:potion>.withTag({Potion: "minecraft:water"});
-craftingTable.addShapedMirrored("water_bottle_dough", MirrorAxis.ALL, <item:farmersdelight:wheat_dough> * 3, [
+craftingTable.addShapedMirrored("water_bottle_dough", MirrorAxis.ALL, <item:farmersdelight:wheat_dough>, [
     [wheat, wheat], 
     [wheat, waterBottle.transformReplace(<item:minecraft:glass_bottle>)]
+]);
+
+craftingTable.addShapedMirrored("egg_dough", MirrorAxis.ALL, <item:farmersdelight:wheat_dough> * 2, [
+    [wheat, wheat], 
+    [wheat, <tag:items:forge:eggs>]
+]);
+
+craftingTable.addShaped("water_bucket_dough", <item:farmersdelight:wheat_dough> * 3, [
+    [wheat, wheat, wheat], 
+    [wheat, <item:minecraft:water_bucket>, wheat],
+    [wheat, wheat, wheat], 
 ]);
 
 # Terracotta Bricks Integration

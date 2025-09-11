@@ -64,6 +64,7 @@ val craftingRemovalByItem = [
     <item:iguanatweaksreborn:copper_leggings>,
     <item:iguanatweaksreborn:copper_boots>,
     # Misc
+    <item:farmersdelight:wheat_dough>,
     <item:sleep_tight:night_bag>,
     <item:brickfurnace:brick_furnace>,
     <item:spelunkery:parachute>,
