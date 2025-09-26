@@ -2,6 +2,8 @@
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.world.biome.Biome;
+import crafttweaker.api.entity.Entity;
+import crafttweaker.api.entity.EntityType;
 
 /* <tag:items:forge:nutrients/proteins>.add(<item:collectorsreap:baked_portobello_cap>); */
 # Foods
@@ -397,3 +399,21 @@ val SevenPoints = [
 for item in SevenPoints {
     <tag:items:crafttweaker:seven_diversity_point>.add(item);
 }
+
+# Animal Tags
+
+
+val fattyAnimals = [
+    <entitytype:eanimod:enhanced_turtle>,
+    <entitytype:eanimod:enhanced_cow>,
+    <entitytype:eanimod:enhanced_pig>,
+    <entitytype:eanimod:enhanced_llama>,
+    <entitytype:eanimod:enhanced_sheep>,
+    <entitytype:eanimod:enhanced_rabbit>,
+    <entitytype:eanimod:enhanced_mooshroom>,
+] as EntityType<Entity>[];
+
+for animal in fattyAnimals {
+    <tag:entity_types:delightful:fatty_animals>.add(animal);
+}
+<tag:entity_types:delightful:drops_ham>.add(<entitytype:eanimod:enhanced_pig>);
