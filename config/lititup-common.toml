@@ -14,7 +14,7 @@
 	#Enable or disable the spawning of the Switchgrass block in newly generated chunks.
 	Switchgrass_Spawn = false
 	#List of items that will ignite Furnace blocks. This list will only accept items with durability.
-	Furnace_Executor_Item_List = ["minecraft:flint_and_steel", "lititup:sparkling_flint", "hardcore_torches:fire_starter"]
+	Furnace_Executor_Item_List = ["minecraft:flint_and_steel", "lititup:sparkling_flint"]
 	#List of blocks that can ignite Furnace block when it's positioned below. Format: 'modid:blockid[:true|false]'
 	#Examples:
 	# - 'minecraft:grass:true'   (Block is considered lit)

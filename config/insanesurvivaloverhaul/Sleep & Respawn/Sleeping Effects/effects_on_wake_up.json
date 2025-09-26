@@ -1,1 +1,7 @@
-[]
+[
+    {
+        "id": "minecraft:hunger",
+        "duration": 1800,
+        "amplifier": 1
+    } 
+]

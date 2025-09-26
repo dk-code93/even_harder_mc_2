@@ -23,7 +23,7 @@
 	#Range: > 1
 	maxCanFuel = 576000
 	#Do lanterns require an oil can to be fueled?
-	lanternsNeedCan = true
+	lanternsNeedCan = false
 	#Can torches be fueled with an oil can?
 	torchesUseCan = false
 	#Globally modify all oil can recipes. 0.5 means all items give half as much oil.
@@ -43,13 +43,13 @@
 	defaultTorchFuel = 48000
 	#How long a soul torch can last without being refilled, in ticks.
 	#Range: > 1
-	defaultSoulTorchFuel = 48000
+	defaultSoulTorchFuel = 72000
 	#Torches will become unlit when broken.
 	torchesExtinguishWhenBroken = true
 	#Overrides torchesExtinguishWhenBroken. Torches will be fully expended when broken (burnt torch or stick).
 	torchesBurnWhenDropped = false
 	#Fully expended torches will drop as sticks rather than burnt torches.
-	burntStick = false
+	burntStick = true
 	#Torches will be affected when in the rain. Will smolder or become unlit depending on torchesSmolder.
 	torchesRain = true
 	#If a torch is in the rain and torchesRain = true, then it will smolder and burn fuel at 1/3rd the normal rate instead of becoming unlit.
@@ -70,12 +70,14 @@
 	invExtinguishInRain = 1
 	#How many torches are crafted.
 	#Range: > 1
-	torchCraftAmount = 2
+	torchCraftAmount = 4
 	#0: Right-click torches to pick them up
 	#1: Right-click torches while sneaking to pick them up
 	#2: Torches cannot be picked up by right-clicking
 	#Range: 0 ~ 2
-	takeTorchMode = 2
+	takeTorchMode = 0
+	#When a torch burns out it will become unlit, and when you light a torch, it will be fully refueled.
+	relightTorches = true
 
 #Lantern Settings
 [lantern]
@@ -100,6 +102,8 @@
 	startingLanternFuel = 0
 	#Allow the player to pick up lanterns with sneak-clicking.
 	pickUpLanterns = true
+	#When a lantern is lit, it will be fully refueled. Recommended that you disable oil can recipes and set startingLanternFuel if you use this.
+	relightLanterns = true
 
 #Fire Starter Settings
 [fire_starter]
