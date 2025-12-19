@@ -28,11 +28,11 @@ val starShard = <item:progressivebosses:nether_star_shard>;
 
 #Furnaces
 
-craftingTable.addShaped('hardcore_furnace', furnace, [
-    [cobble, cobble, cobble],
-    [cobble, campfire, cobble],
-    [smoothStone, smoothStone, smoothStone]
-]);
+// craftingTable.addShaped('hardcore_furnace', furnace, [
+//     [cobble, cobble, cobble],
+//     [cobble, campfire, cobble],
+//     [smoothStone, smoothStone, smoothStone]
+// ]);
 
 craftingTable.addShaped('hardcore_blast_furnace', <item:minecraft:blast_furnace>, [
     [iron, iron, iron],
@@ -44,12 +44,6 @@ craftingTable.addShaped('hardcore_blackstone_furnace', <item:nethersdelight:blac
     [blackstone, blackstone, blackstone],
     [blackstone, campfire, blackstone],
     [blackstone, blackstone, blackstone]
-]);
-
-craftingTable.addShaped('clay_brick_furnace', <item:brickfurnace:brick_furnace>, [
-    [brickBlock, clayBrick, brickBlock],
-    [clayBrick, campfire, clayBrick],
-    [brickBlock, clayBrick, brickBlock]
 ]);
 
 #Glowstone dust from lichen
@@ -277,33 +271,6 @@ craftingTable.addShaped("diamond_quiver", <item:nyfsquiver:diamond_quiver>, [
 # Copper Equipment
 val copperPlate = <item:minecraft_121_update:copper_plate>;
 val copperIngot = <item:minecraft:copper_ingot>;
-
-craftingTable.addShapedMirrored("copper_bar",  MirrorAxis.ALL, copperPlate, [
-    [empty, copperIngot],
-    [copperIngot, empty]
-]);
-
-craftingTable.addShaped("copper_helm", <item:iguanatweaksreborn:copper_helmet>, [
-    [copperPlate, copperPlate, copperPlate],
-    [copperPlate, empty, copperPlate]
-]);
-
-craftingTable.addShaped("copper_chest", <item:iguanatweaksreborn:copper_chestplate>, [
-    [copperPlate, empty, copperPlate],
-    [copperPlate, copperPlate, copperPlate],
-    [copperPlate, copperPlate, copperPlate]
-]);
-
-craftingTable.addShaped("copper_legs", <item:iguanatweaksreborn:copper_leggings>, [
-    [copperPlate, copperPlate, copperPlate],
-    [copperPlate, empty, copperPlate],
-    [copperPlate, empty, copperPlate]
-]);
-
-craftingTable.addShaped("copper_boots", <item:iguanatweaksreborn:copper_boots>, [
-    [copperPlate, empty, copperPlate],
-    [copperPlate, empty, copperPlate]
-]);
 
 craftingTable.addShaped("horned_copper_helm", <item:minecraft_121_update:copper_helmet_helmet>, [
     [<item:minecraft_121_update:copper_horn>, empty, <item:minecraft_121_update:copper_horn>],
