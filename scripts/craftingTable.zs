@@ -250,6 +250,22 @@ craftingTable.addShaped("witch_eye_reworked", <item:endrem:witch_eye>, [
     [empty, <item:minecraft:potion>.withTag({Potion: "minecraft:strong_harming"}).transformReplace(<item:minecraft:glass_bottle>), empty],
 ]);
 
+val conduit = <item:minecraft:conduit>;
+
+craftingTable.addShaped("exotic_eye_reworked", <item:endrem:exotic_eye>, [
+    [<item:minecraft:bubble_coral>, <item:minecraft:glow_ink_sac>, <item:minecraft:fire_coral>],
+    [conduit, enderEye, conduit],
+    [<item:minecraft:horn_coral>, <item:minecraft:sniffer_egg>, <item:minecraft:tube_coral>,]
+]);
+
+val essence = <item:nether_remastered:bottled_nether_essence>;
+
+craftingTable.addShaped("undead_eye_reworked", <item:endrem:undead_eye>, [
+    [<item:minecraft:bone>, essence, membrane],
+    [<item:majruszsdifficulty:cerberus_fang>, <item:endrem:undead_soul>, <item:vanillabackport:dried_ghast>],
+    [<item:minecraft:rotten_flesh>, <item:majruszsdifficulty:soul_jar>, <item:minecraft:ghast_tear>,]
+]);
+
 # Quivers
 
 craftingTable.addShaped("diamond_quiver", <item:nyfsquiver:diamond_quiver>, [

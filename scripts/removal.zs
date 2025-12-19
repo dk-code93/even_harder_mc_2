@@ -57,6 +57,8 @@ val craftingRemovalByItem = [
     // <item:abundant_atmosphere:soul_brazier>,
     # End Eyes
     <item:endrem:witch_eye>,
+    <item:endrem:exotic_eye>,
+    <item:endrem:undead_eye>,
     # Equipment
     <item:minecraft_121_update:copper_helmet_helmet>,
     <item:iguanatweaksreborn:copper_helmet>,
