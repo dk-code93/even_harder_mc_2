@@ -494,6 +494,10 @@
             "count": 3
           },
           {
+            "type": "minecraft:phantom",
+            "count": 3
+          },
+          {
             "type": "minecraft:stray",
             "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
             "count": 3
@@ -545,12 +549,21 @@
           {
             "type": "minecraft:stray",
             "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
-            "count": 3
+            "count": 2
+          },
+          {
+            "type": "ntrials:bogged",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
+            "count": 2
           },
           {
             "type": "minecraft:wither_skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
             "count": 1
+          },
+          {
+            "type": "minecraft:phantom",
+            "count": 4
           }
         ],
         "game_stage": "expert",
@@ -561,12 +574,17 @@
           {
             "type": "minecraft:zombie",
             "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
-            "count": 1
+            "count": 2
           },
           {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
-            "count": 1
+            "count": 2
+          },
+          {
+            "type": "ntrials:bogged",
+            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
+            "count": 3
           },
           {
             "type": "minecraft:stray",
@@ -580,7 +598,7 @@
           },
           {
             "type": "majruszsdifficulty:tank",
-            "count": 1
+            "count": 2
           },
           {
             "type": "minecraft:husk",
@@ -591,6 +609,10 @@
             "type": "minecraft:wither_skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
             "count": 2
+          },
+          {
+            "type": "minecraft:phantom",
+            "count": 4
           }
         ],
         "boss": {
@@ -605,35 +627,44 @@
           {
             "type": "minecraft:zombie",
             "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
-            "count": 1
+            "count": 2
           },
           {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
-            "count": 1
+            "count": 2
           },
           {
             "type": "majruszsdifficulty:tank",
-            "count": 1
+            "count": 2
           },
           {
             "type": "minecraft:stray",
             "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
-            "count": 1
+            "count": 2
+          },
+          {
+            "type": "ntrials:bogged",
+            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+            "count": 2
           },
           {
             "type": "minecraft:husk",
             "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
-            "count": 1
+            "count": 2
           },
           {
             "type": "minecraft:wither_skeleton",
             "equipment": "majruszsdifficulty:undead_army/wave_6_wither_skeleton",
-            "count": 1
+            "count": 2
           },
           {
             "type": "majruszsdifficulty:cerberus",
             "count": 1
+          },
+          {
+            "type": "minecraft:phantom",
+            "count": 3
           }
         ],
         "boss": {
@@ -651,29 +682,51 @@
       "item_drop_chance": 0.2,
       "custom_name_chance": 0.025,
       "custom_names": [
-        "Freshah"
+        "Freshah",
+        "Clank"
       ],
       "locations": [
         {
           "loot": "majruszsdifficulty:gameplay/cursed_armor_dungeon",
           "chests": [
-            "minecraft:chests/simple_dungeon"
+            "minecraft:chests/simple_dungeon",
+            "betterdungeons:skeleton_dungeon/chests/common",
+            "betterdungeons:skeleton_dungeon/chests/middle",
+            "betterdungeons:small_dungeon/chests/loot_piles",
+            "betterdungeons:small_nether_dungeon/chests/common",
+            "betterdungeons:spider_dungeon/chests/egg_room",
+            "betterdungeons:zombie_dungeon/chests/tombstone"
           ],
-          "chance": 0.5
+          "chance": 0.4
         },
         {
           "loot": "majruszsdifficulty:gameplay/cursed_armor_stronghold",
           "chests": [
             "minecraft:chests/stronghold_corridor",
             "minecraft:chests/stronghold_crossing",
-            "minecraft:chests/stronghold_library"
+            "minecraft:chests/stronghold_library",
+            "betterstrongholds:chests/armoury",
+            "betterstrongholds:chests/cmd_yung",
+            "betterstrongholds:chests/common",
+            "betterstrongholds:chests/crypt",
+            "betterstrongholds:chests/grand_library",
+            "betterstrongholds:chests/library_md",
+            "betterstrongholds:chests/mess",
+            "betterstrongholds:chests/prison_lg",
+            "betterstrongholds:chests/trap",
+            "betterstrongholds:chests/treasure"
           ],
-          "chance": 0.4
+          "chance": 0.3
         },
         {
           "loot": "majruszsdifficulty:gameplay/cursed_armor_portal",
           "chests": [
-            "minecraft:chests/ruined_portal"
+            "minecraft:chests/ruined_portal",
+            "hopo:chests/portal/better_ruined_portal",
+            "hopo:chests/portal/dripstone_portal",
+            "hopo:chests/portal/lush_portal",
+            "hopo:chests/portal/piglin_ruin",
+            "hopo:chests/portal/ruined_portal_cool"
           ],
           "chance": 1.0
         },
@@ -684,16 +737,60 @@
             "minecraft:chests/bastion_hoglin_stable",
             "minecraft:chests/bastion_other",
             "minecraft:chests/bastion_treasure",
-            "minecraft:chests/nether_bridge"
+            "minecraft:chests/nether_bridge",
+            "betterfortresses:chests/beacon",
+            "betterfortresses:chests/extra",
+            "betterfortresses:chests/hall",
+            "betterfortresses:chests/keep",
+            "betterfortresses:chests/obsidian",
+            "betterfortresses:chests/puzzle",
+            "betterfortresses:chests/quarters",
+            "betterfortresses:chests/storage",
+            "betterfortresses:chests/worship"
           ],
           "chance": 0.25
+        },
+        {
+          "loot": "majruszsdifficulty:gameplay/cursed_armor_mansion",
+          "chests": [
+            "minecraft:chests/woodland_mansion",
+            "biomemakeover:mansion/standard",
+            "biomemakeover:mansion/good",
+            "biomemakeover:mansion/junk",
+            "biomemakeover:mansion/dungeon",
+            "biomemakeover:mansion/dungeon_good",
+            "biomemakeover:mansion/dungeon_junk"
+          ],
+          "chance": 0.25
+        },
+        {
+          "loot": "majruszsdifficulty:gameplay/cursed_armor_village",
+          "chests": [
+            "minecraft:chests/village/village_armorer",
+            "minecraft:chests/village/village_butcher",
+            "minecraft:chests/village/village_cartographer",
+            "minecraft:chests/village/village_desert_house",
+            "minecraft:chests/village/village_fisher",
+            "minecraft:chests/village/village_fletcher",
+            "minecraft:chests/village/village_mason",
+            "minecraft:chests/village/village_plains_house",
+            "minecraft:chests/village/village_savanna_house",
+            "minecraft:chests/village/village_shepherd",
+            "minecraft:chests/village/village_snowy_house",
+            "minecraft:chests/village/village_taiga_house",
+            "minecraft:chests/village/village_tannery",
+            "minecraft:chests/village/village_temple",
+            "minecraft:chests/village/village_toolsmith",
+            "minecraft:chests/village/village_weaponsmith"
+          ],
+          "chance": 0.33
         },
         {
           "loot": "majruszsdifficulty:gameplay/cursed_armor_end",
           "chests": [
             "minecraft:chests/end_city_treasure"
           ],
-          "chance": 0.5
+          "chance": 0.33
         }
       ]
     }

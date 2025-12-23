@@ -268,15 +268,6 @@ craftingTable.addShaped("diamond_quiver", <item:nyfsquiver:diamond_quiver>, [
     [diamond, diamond, diamond]
 ]);
 
-# Copper Equipment
-val copperPlate = <item:minecraft_121_update:copper_plate>;
-val copperIngot = <item:minecraft:copper_ingot>;
-
-craftingTable.addShaped("horned_copper_helm", <item:minecraft_121_update:copper_helmet_helmet>, [
-    [<item:minecraft_121_update:copper_horn>, empty, <item:minecraft_121_update:copper_horn>],
-    [empty, <item:iguanatweaksreborn:copper_helmet>, empty]
-]);
-
 # Parachute
 val rope = <item:farmersdelight:rope>;
 

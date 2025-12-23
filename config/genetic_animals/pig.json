@@ -52,6 +52,16 @@
       "isBreedingItem": true
     },
     {
+      "registryName": "farmersdelight:onion",
+      "hungerRestored": 3000,
+      "isBreedingItem": true
+    },
+    {
+      "registryName": "farmersdelight:tomato",
+      "hungerRestored": 3000,
+      "isBreedingItem": true
+    },
+    {
       "registryName": "minecraft:beetroot",
       "hungerRestored": 3000,
       "isBreedingItem": true

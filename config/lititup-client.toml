@@ -1,0 +1,31 @@
+
+["Guide Book"]
+	#Show the in game guide screen within the compatible furnace blocks.
+	Guide_Screen = true
+
+["Visual & Color Effects"]
+	#Show particles when manual ignition occurs.
+	Ignite_Particles = true
+	#Show a bright flash on a successful double flint ignition.
+	Flint_Ignition_Flash = true
+	#Use biome colors for Switchgrass elements within the mod's items. If false, the item's color will be fixed.
+	Dynamic_Item_Color = true
+	#Color tone for block texture.
+	#
+	#Blend (0.0–2.0):
+	# - 0.0: grass-like
+	# - 1.0: bright yellow
+	# - >1.0: stronger yellow (useful with shaders)
+	#
+	#Range: 0.0 ~ 2.0
+	Color_Blend_Block = 0.4
+	#Color tone for item textures.
+	#
+	#Blend (0.0–2.0):
+	# - 0.0: grass-like
+	# - 1.0: bright yellow
+	# - >1.0: stronger yellow (useful with shaders)
+	#
+	#Range: 0.0 ~ 2.0
+	Color_Blend_Item = 0.3
+

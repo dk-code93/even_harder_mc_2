@@ -134,6 +134,8 @@ for item in addCarbs {
 val addVeggies = [
     <item:farmersdelight:vegetable_noodles>,
     <item:delightful:field_salad>,
+    <item:delightful:green_tea_leaf>,
+    <item:delightful:matcha>,
 ] as IItemStack[];
 
 for item in addVeggies {

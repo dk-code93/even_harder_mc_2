@@ -2,6 +2,7 @@
 import crafttweaker.api.recipe.CraftingTableRecipeManager;
 import crafttweaker.api.recipe.FurnaceRecipeManager;
 import crafttweaker.api.recipe.StoneCutterManager;
+import crafttweaker.api.recipe.CampFireRecipeManager;
 import crafttweaker.api.item.IItemStack;
 import mods.jeitweaker.Jei;
 import mods.jeitweaker.ingredient.JeiIngredient;
@@ -23,7 +24,6 @@ val craftingRemovalByName = [
     "nyfsquiver:diamond_quiver_item_craft",
     // "map_atlases:craft_atlas",
     # Working Stations
-    "minecraft:furnace",
     "nethersdelight:blackstone_furnace",
     "friendsandfoes:acacia_beehive",
     "friendsandfoes:birch_beehive",
@@ -60,19 +60,10 @@ val craftingRemovalByItem = [
     <item:endrem:exotic_eye>,
     <item:endrem:undead_eye>,
     # Equipment
-    <item:minecraft_121_update:copper_helmet_helmet>,
-    <item:iguanatweaksreborn:copper_helmet>,
-    <item:iguanatweaksreborn:copper_chestplate>,
-    <item:iguanatweaksreborn:copper_leggings>,
-    <item:iguanatweaksreborn:copper_boots>,
     # Misc
     <item:farmersdelight:wheat_dough>,
     <item:sleep_tight:night_bag>,
     <item:spelunkery:parachute>,
-    <item:minecraft_121_update:copper_plate>,
-    <item:minecraft_121_update:weathered_copper_plate>,
-    <item:minecraft_121_update:exposed_copper_plate>,
-    <item:minecraft_121_update:oxidized_copper_plate>,
     <item:lititup:sparkling_flint>,
 ] as IItemStack[];
 
@@ -85,7 +76,7 @@ val furnaceRemoval = [
     # Raw Ores
     <item:minecraft:raw_iron>,
     <item:minecraft:raw_gold>,
-    <item:minecraft:raw_copper>,
+    // <item:minecraft:raw_copper>,
     <item:spelunkery:raw_magnetite>,
     # Foods
     // <item:minecraft:beef>,
@@ -104,6 +95,15 @@ val furnaceRemoval = [
 
 for item in furnaceRemoval {
     furnace.removeByInput(item);
+}
+
+# Campfire
+val campfireRemoval = [
+    "iguanatweaksreborn:copper_ingot_from_campfire",
+] as string[];
+
+for item in campfireRemoval {
+    campfire.removeByName(item);
 }
 
 #Stonecutter
@@ -220,10 +220,6 @@ val toRemoveAndHide = [
     <item:biomemakeover:scuttler_tail>,
     <item:biomemakeover:cattail>,
     <item:biomemakeover:reed>,
-
-    <item:brickfurnace:brick_blast_furnace>,
-    <item:brickfurnace:brick_smoker>,
-
     <item:iguanatweaksreborn:red_mushroom_stew>,
     <item:iguanatweaksreborn:brown_mushroom_stew>,
 ] as IItemStack[];

@@ -10,6 +10,9 @@
 			swamp_cypress = false
 			ancient_oak = true
 
+		[types.wood_type.minecraft]
+			pale_oak = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.biomemakeover]
@@ -17,6 +20,9 @@
 			willow = false
 			swamp_cypress = false
 			ancient_oak = true
+
+		[types.leaves_type.minecraft]
+			pale_oak = true
 
 #Disables specific entries
 [entries]

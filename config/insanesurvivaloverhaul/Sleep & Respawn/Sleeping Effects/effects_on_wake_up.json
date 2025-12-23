@@ -1,7 +1,7 @@
 [
     {
         "id": "minecraft:hunger",
-        "duration": 1800,
+        "duration": 3600,
         "amplifier": 1
     } 
 ]

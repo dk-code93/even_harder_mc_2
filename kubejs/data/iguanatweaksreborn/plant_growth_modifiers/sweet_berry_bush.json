@@ -1,6 +1,6 @@
 {
     "block": "minecraft:sweet_berry_bush",
-    "growth_multiplier": 3,
+    "growth_multiplier": 10,
     "modifiers": [
         {
             "id": "iguanatweaksreborn:sunlight",

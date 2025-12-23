@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "biomemakeover:cladded_helmet",
+          "functions": [
+            {
+                "function": "majruszsdifficulty:curse_randomly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "biomemakeover:cladded_chestplate",
+          "functions": [
+            {
+                "function": "majruszsdifficulty:curse_randomly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "biomemakeover:cladded_leggings",
+          "functions": [
+            {
+                "function": "majruszsdifficulty:curse_randomly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "biomemakeover:cladded_boots",
+          "functions": [
+            {
+                "function": "majruszsdifficulty:curse_randomly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+                "function": "majruszsdifficulty:curse_randomly"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

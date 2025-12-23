@@ -1,84 +1,97 @@
 
-["Main Settings Handler"]
-	#Enable or disable lit up interaction of vanilla furnace blocks.
-	#Disabling this may affect compatibility with other mods depending on their furnace block implementation.
+["Compatibility Handler"]
+	#Compatibility with Farmer's Delight.
+	#Link: https://www.curseforge.com/minecraft/mc-mods/farmers-delight
+	Farmers_Delight_Mod_Compatibility = true
+	#Compatibility with Let's Do Candlelight.
+	#Link: https://www.curseforge.com/minecraft/mc-mods/lets-do-candlelight
+	Let_Do_Candlelight_Compatibility = true
+	#Compatibility with Brick Furnace.
+	#Link: https://www.curseforge.com/minecraft/mc-mods/brick-furnace
+	Brick_Furnace_Mod_Compatibility = true
+	#Compatibility with Iron Furnaces.
+	#Link: https://www.curseforge.com/minecraft/mc-mods/iron-furnaces
+	Iron_Furnaces_Mod_Compatibility = true
+	#Compatibility with Better Furnace Reforged.
+	#Link: https://www.curseforge.com/minecraft/mc-mods/better-furnaces-reforged
+	Better_Furnaces_Reforged_Mod_Compatibility = true
+	#Compatibility with the Aether mod.
+	#False by default: flint and steel cannot be used in the Aether dimension.
+	#Link: https://www.curseforge.com/minecraft/mc-mods/aether
+	#
+	Aether_Mod_Compatibility = false
+	#Compatibility with Crock Pot.
+	#Link: https://www.curseforge.com/minecraft/mc-mods/crock-pot
+	Crock_Pot_Mod_Compatibility = true
+	#Compatibility with Tough As Nails.
+	#Link: https://www.curseforge.com/minecraft/mc-mods/tough-as-nails
+	Tough_As_Nails_Mod_Compatibility = true
+	#Compatibility with Overgeared.
+	#Link: https://www.curseforge.com/minecraft/mc-mods/overgeared
+	Overgeared_Mod_Compatibility = true
+
+["Furnace & Ignition"]
+	#Enable or disable vanilla furnace item ignition.
+	#Turning this off may affect mods that use vanilla logic for their custom furnace blocks.
+	#
 	Main_Executor_Event = true
-	#Enable or disable Lava/Fire ignition option. Putting Furnace above those sources will resume vanilla execution of the Furnace.
-	Lava_Fire_Ignition = true
-	#Enable or disable particle ignition.
-	Ignite_Particles = true
-	#Enable or disable guide book screen.
-	Guide_Screen = true
-	#Enable or disable dynamic biome based item coloring. If false, items will have a static color.
-	Dynamic_Item_Color = true
-	#Enable or disable the spawning of the Switchgrass block in newly generated chunks.
-	Switchgrass_Spawn = false
-	#List of items that will ignite Furnace blocks. This list will only accept items with durability.
-	Furnace_Executor_Item_List = ["minecraft:flint_and_steel", "lititup:sparkling_flint"]
-	#List of blocks that can ignite Furnace block when it's positioned below. Format: 'modid:blockid[:true|false]'
+	#Fire Aspect can ignite supported blocks.
+	Fire_Aspect_Ignition = true
+	#Furnaces above blocks present within 'Furnace_Executor_Block_List' config value, will keep vanilla smelting logic.
+	Hot_Block_Ignition = true
+	#Newly placed campfires start unlit.
+	Place_Campfires_Unlit = false
+	#Allows to ignite the furnace with double flint (one in each hand).
+	Double_Flint_Ignition = false
+	#Chance for the double flint ignition.
+	#Range: 0.0 ~ 1.0
+	Double_Flint_Base_Chance = 0.15
+	#List of items that can ignite furnace blocks. Items only.
+	Furnace_Executor_Item_List = ["minecraft:flint_and_steel", "lititup:sparkling_flint", "lititup:golden_lighter"]
+	#Blocks that can ignite a furnace when placed below. Format: 'modid:blockid[:true|false]'
+	#The true/false value refers only to the 'lit' state property if present.
+	#
 	#Examples:
-	# - 'minecraft:grass:true'   (Block is considered lit)
-	# - 'minecraft:grass:false'  (Block is considered unlit)
-	# - 'minecraft:magma_block'  (No lit property, just the block)
+	# - 'minecraft:campfire:true' (treat as lit)
+	# - 'minecraft:campfire:false' (treat as unlit)
+	# - 'minecraft:magma_block' (no lit flag)
 	#
 	Furnace_Executor_Block_List = ["minecraft:fire", "minecraft:campfire:true", "minecraft:soul_campfire:true", "minecraft:magma_block", "minecraft:lava"]
-	#Custom item consumption for when the player tries to use the Sparkling Flint item. This value can be empty, just keep the brackets.
+	#Items that are allowed to light UNLIT campfires (by registry id).
+	#Example: "minecraft:flint_and_steel", "lititup:sparkling_flint"
+	#
+	Campfire_Ignitor_Item_List = ["minecraft:flint_and_steel", "lititup:sparkling_flint", "lititup:golden_lighter"]
+
+["Sparkling Flint Settings"]
+	#Item consumed when using Sparkling Flint.
+	#Use an empty string ("") to consume nothing. Within Bookling Gear settings, just remove the value.
+	#
 	Sparkling_flint_consumption_item = "farmersdelight:straw"
-	#Lit up furnaces success rate for Sparkling Flint item. (0.6 = 60%)
+	#Sparkling Flint success chance. (0.6 = 60%)
 	#Range: 0.0 ~ 1.0
 	Sparkling_Flint_Jam_Chance = 0.6
-	#Set the color tone for block texture.
-	#Blend Ratio (0.0 - 2.0):
-	# - 0.0: Grass like tones.
-	# - 1.0: Bright yellow.
-	# - Above 1.0: Stronger yellow (Useful with shaders).
-	#Range: 0.0 ~ 2.0
-	Color_Blend_Block = 0.4
-	#Set the color tone for item texture.
-	#Blend Ratio (0.0 - 2.0):
-	# - 0.0: Grass like tones.
-	# - 1.0: Bright yellow.
-	# - Above 1.0: Stronger yellow (Useful with shaders).
-	#Range: 0.0 ~ 2.0
-	Color_Blend_Item = 0.3
-	#Cooldown for the jammed Sparkling Flint item.
+	#Cooldown after a jam (ticks).
 	#Range: > 2
 	Sparkling_Flint_Cooldown = 40
-	#Durability amount for Sparkling Flint item.
+	#Total durability for Sparkling Flint.
 	#Range: > 1
 	Sparkling_Flint_Durability = 5
 
-["Compatibility Handler"]
-	#Enable or disable compatibility with Farmer's Delight mod.
-	#Link: https://www.curseforge.com/minecraft/mc-mods/farmers-delight
-	Farmers_Delight_Mod_Compatibility = true
-	#Enable or disable compatibility with Let's Do Candlelight mod.
-	#Link: https://www.curseforge.com/minecraft/mc-mods/lets-do-candlelight
-	Let_Do_Candlelight_Compatibility = true
-	#Enable or disable compatibility with the Brick Furnace mod.
-	#Link: https://www.curseforge.com/minecraft/mc-mods/brick-furnace
-	Brick_Furnace_Mod_Compatibility = true
-	#Enable or disable compatibility with the Iron Furnaces mod.
-	#Link: https://www.curseforge.com/minecraft/mc-mods/iron-furnaces
-	Iron_Furnaces_Mod_Compatibility = true
-	#Enable or disable compatibility with the Furnace Mk2 mod.
-	#Link: https://www.curseforge.com/minecraft/mc-mods/furnace-mk2
-	Furnace_Mk2_Mod_Compatibility = true
-	#Enable or disable compatibility with the Better Furnace Reforged mod.
-	#Link: https://www.curseforge.com/minecraft/mc-mods/better-furnaces-reforged
-	Better_Furnaces_Reforged_Mod_Compatibility = true
-	#Enable or disable compatibility with the Aether mod.
-	#Link: https://www.curseforge.com/minecraft/mc-mods/aether 
-	#Note: This feature is disabled by default because you can't use flint and steel in the Aether dimension.
-	Aether_Mod_Compatibility = false
-	#Enable or disable compatibility with the Crock Pot mod.
-	#Link: https://www.curseforge.com/minecraft/mc-mods/crock-pot
-	Crock_Pot_Mod_Compatibility = true
-	#Enable or disable compatibility with the Tough As Nails mod.
-	#Link: https://www.curseforge.com/minecraft/mc-mods/tough-as-nails
-	Tough_As_Nails_Mod_Compatibility = true
-
-["Extra Settings"]
-	#If true, campfires placed by the player will not be lit.
-	Place_Campfires_Unlit = true
+["World Settings"]
+	#Spawn Switchgrass in newly generated chunks.
+	Switchgrass_Spawn = false
+	#Average rarity for natural switchgrass patches spawn.
+	#1 = try every chunk, 32 = once every 32 tries on average, higher = rarer.
+	#
+	#Range: 1 ~ 4096
+	Switchgrass_Spawn_Rarity = 32
+	#Block IDs that switchgrass is allowed to grow on.
+	Switchgrass_Soil = ["minecraft:grass_block", "minecraft:dirt", "minecraft:rooted_dirt"]
+	#Allow the bone meal item to spawn switchgrass once in a while.
+	Switchgrass_Bone_Meal = true
+	#Add the Golden Lighter to selected loots (mineshafts, village toolsmith, buried treasure, desert pyramid).
+	Golden_Lighter_Loot = true
+	#Chance for the Golden Lighter to appear in its designated loot spots (0.0 = never, 1.0 = always).
+	#Range: 0.0 ~ 1.0
+	Golden_Lighter_Loot_Chance = 0.3
 
