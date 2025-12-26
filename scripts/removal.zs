@@ -24,6 +24,7 @@ val craftingRemovalByName = [
     "nyfsquiver:diamond_quiver_item_craft",
     // "map_atlases:craft_atlas",
     # Working Stations
+    "minecraft:furnace",
     "nethersdelight:blackstone_furnace",
     "friendsandfoes:acacia_beehive",
     "friendsandfoes:birch_beehive",

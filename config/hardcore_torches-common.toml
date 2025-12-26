@@ -124,7 +124,7 @@
 #Campfire Settings
 [campfire]
 	#Whether campfires should be crafted as unlit/hardcore.
-	craftHardcoreCampfire = false
+	craftHardcoreCampfire = true
 	#Max fuel that can be added to a campfire
 	#Range: > 0
 	campfireMaxFuel = 24000

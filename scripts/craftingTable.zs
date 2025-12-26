@@ -22,17 +22,18 @@ val redstoneBlock = <item:minecraft:redstone_block>;
 val echoShard = <item:minecraft:echo_shard>;
 val enderEye = <item:minecraft:ender_eye>;
 val gold = <item:minecraft:gold_ingot>;
+val copper = <item:minecraft:copper_ingot>;
 val iron = <item:minecraft:iron_ingot>; 
 val membrane = <item:minecraft:phantom_membrane>;
 val starShard = <item:progressivebosses:nether_star_shard>;
 
 #Furnaces
 
-// craftingTable.addShaped('hardcore_furnace', furnace, [
-//     [cobble, cobble, cobble],
-//     [cobble, campfire, cobble],
-//     [smoothStone, smoothStone, smoothStone]
-// ]);
+craftingTable.addShaped('hardcore_furnace', furnace, [
+    [cobble, cobble, cobble],
+    [copper, campfire, copper],
+    [cobble, cobble, cobble]
+]);
 
 craftingTable.addShaped('hardcore_blast_furnace', <item:minecraft:blast_furnace>, [
     [iron, iron, iron],
