@@ -77,7 +77,7 @@ val furnaceRemoval = [
     # Raw Ores
     <item:minecraft:raw_iron>,
     <item:minecraft:raw_gold>,
-    // <item:minecraft:raw_copper>,
+    <item:minecraft:raw_copper>,
     <item:spelunkery:raw_magnetite>,
     # Foods
     // <item:minecraft:beef>,

@@ -22,4 +22,4 @@ campfire.addRecipe('light_torches', <item:hardcore_torches:lit_torch>, <item:har
 #Furnace Ore Nerf
 furnace.addRecipe("raw_iron_nerf", <item:minecraft:iron_nugget> * 3, <item:minecraft:raw_iron>, 0.7, 200);
 furnace.addRecipe("raw_gold_nerf", <item:minecraft:gold_nugget> * 3, <item:minecraft:raw_gold>, 0.7, 200);
-furnace.addRecipe("raw_copper_nerf", <item:spelunkery:copper_nugget> * 3, <item:minecraft:raw_copper>, 0.7, 200);
+furnace.addRecipe("raw_copper_nerf", <item:spelunkery:copper_nugget> * 6, <item:minecraft:raw_copper>, 0.7, 200);

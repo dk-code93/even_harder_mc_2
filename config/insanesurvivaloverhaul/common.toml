@@ -1335,7 +1335,7 @@
 		#If true, the spawner delay is set to 'Delay' instead of using MinSpawnDelay and MaxSpawnDelay
 		"Override spawn delay" = true
 		#Range in which a player must be present for a spawner to work. Vanilla is 16.
-		"Required player range" = 24
+		"Required player range" = 32
 		#If true, monsters from spawners will spawn no matter the light level.
 		"Ignore light" = true
 		#If true, disabled spawners can be re-enabled with a spawner reactivator item defined in the `iguanatweaksreborn:spawner_reactivator` item tag. These items get a new tooltip mentioning that they can be used to re-enable spawners.
@@ -1346,16 +1346,16 @@
 		#Spawning Delay (in ticks) of the spawner. Vanilla is 200~800. Requires 'Override Spawn Delay' to be enabled.
 		[World.Spawners.Delay]
 			#Range: 1.0 ~ 1.7976931348623157E308
-			Minimum = 400.0
+			Minimum = 200.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			Maximum = 1600.0
+			Maximum = 600.0
 
 		[World.Spawners."Disable spawners"]
 			#If true, spawners will be disabled after spawning a certain amount of mobs. This is not compatible with empowered spawners.
 			Enabled = false
 			#The minimum amount of spawnable mobs (when the spawner is basically in the same position as the world spawn). The amount of spawnable mobs before deactivating is equal to the distance divided by 8 (plus this value). E.g. At 160 blocks from spawn the max spawnable mobs will be 160 / 8 + 20 = 20 + 20 = 40
 			#Range: > 0
-			"Min spawnable mobs" = 20
+			"Min spawnable mobs" = 12
 			#This multiplier increases the max mobs spawned.
 			#Range: 0.0 ~ 1.7976931348623157E308
 			"Spawnable mobs multiplier" = 1.0
@@ -1557,7 +1557,7 @@
 		"Nerf respiration" = false
 		#Set arrow's damage increase with the Power enchantment (vanilla is 0.5). If set to a value != 0.5 the flat 0.5 bonus is also removed. Set to 0.5 to disable.
 		#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
-		"Power enchantment damage" = 0.1
+		"Power enchantment damage" = 0.2
 		#If true, the formula for bonus damage for arrows is changed from `'Power Enchantment Damage' + 'Power Enchantment Damage' * lvl` to `base_damage * 'Power Enchantment Damage' * lvl`.
 		"Power affects base arrow damage" = true
 		#Vanilla is 0.6

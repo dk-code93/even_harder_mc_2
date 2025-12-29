@@ -55,7 +55,7 @@
 	#Torches will be affected when in the rain. Will smolder or become unlit depending on torchesSmolder.
 	torchesRain = true
 	#If a torch is in the rain and torchesRain = true, then it will smolder and burn fuel at 1/3rd the normal rate instead of becoming unlit.
-	torchesSmolder = true
+	torchesSmolder = false
 	#If true, torches must be lit after crafting.
 	craftUnlit = true
 	#Right click a torch without holding fuel or a lighter to unlight it.
@@ -77,7 +77,7 @@
 	#1: Right-click torches while sneaking to pick them up
 	#2: Torches cannot be picked up by right-clicking
 	#Range: 0 ~ 2
-	takeTorchMode = 0
+	takeTorchMode = 1
 	#When a torch burns out it will become unlit, and when you light a torch, it will be fully refueled.
 	relightTorches = true
 

@@ -36,19 +36,40 @@ loot.modifiers.register(
     CommonLootModifiers.addWithChance(<item:nether_remastered:seal_crystal> % 30)
 );
 
-# Add Nether Seal 2 to Witch's chest
+# Add Nether Seal 2 to Ocean Ruins
 loot.modifiers.register(
-    "add_seal_shard_2_chest",
-    LootConditions.only(LootTableIdLootCondition.create(<resource:betterwitchhuts:chests/hut_0>)),
-    CommonLootModifiers.addWithChance(<item:nether_remastered:seal_piece_2> % 100)
+    "remove_seal_shard_2",
+    LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:entities/witch>)),
+    CommonLootModifiers.remove(<item:nether_remastered:seal_piece_2>)
+);
+
+loot.modifiers.register(
+    "add_seal_shard_2_archeology",
+    LootConditions.anyOf([
+        LootTableIdLootCondition.create(<resource:minecraft:archaeology/ocean_ruin_cold>),
+        LootTableIdLootCondition.create(<resource:minecraft:archaeology/ocean_ruin_warm>),
+        ]),
+    CommonLootModifiers.add(<item:nether_remastered:seal_piece_2>)
+);
+
+loot.modifiers.register(
+    "add_seal_shard_2_small",
+    LootConditions.anyOf(LootTableIdLootCondition.create(<resource:minecraft:chests/underwater_ruin_small>)),
+    CommonLootModifiers.addWithChance(<item:nether_remastered:seal_piece_2> % 30)
+);
+
+loot.modifiers.register(
+    "add_seal_shard_2_big",
+    LootConditions.anyOf(LootTableIdLootCondition.create(<resource:minecraft:chests/underwater_ruin_big>)),
+    CommonLootModifiers.addWithChance(<item:nether_remastered:seal_piece_2> % 50)
 );
 
 # Move Nether Seal 3 to Illusioner
-// loot.modifiers.register(
-//     "remove_seal_shard_3",
-//     LootConditions.anyOf(LootTableIdLootCondition.create(<resource:minecraft:entities/evoker>)),
-//     CommonLootModifiers.remove(<item:nether_remastered:seal_piece_3>)
-// );
+loot.modifiers.register(
+    "remove_seal_shard_3",
+    LootConditions.anyOf(LootTableIdLootCondition.create(<resource:minecraft:entities/evoker>)),
+    CommonLootModifiers.remove(<item:nether_remastered:seal_piece_3>)
+);
 
 loot.modifiers.register(
     "add_seal_shard_3_rare",
@@ -68,22 +89,16 @@ loot.modifiers.register(
     CommonLootModifiers.addWithChance(<item:nether_remastered:seal_piece_3> % 30)
 );
 
-# Add Nether Seal 1 to Shipwreck
-// loot.modifiers.register(
-//     "remove_seal_shard_1",
-//     LootConditions.only(LootTableIdLootCondition.create(<resource:minecraft:chests/abandoned_mineshaft>)),
-//     CommonLootModifiers.remove(<item:nether_remastered:seal_piece_1>)
-// );
+# Add Nether Seal 4 to new illager outposts
 
-// loot.modifiers.register(
-//     "add_seal_shard_1_common",
-//     LootConditions.anyOf([
-//         LootTableIdLootCondition.create(<resource:minecraft:chests/shipwreck_map>),
-//         LootTableIdLootCondition.create(<resource:minecraft:chests/shipwreck_supply>),
-//         LootTableIdLootCondition.create(<resource:minecraft:chests/shipwreck_treasure>),
-//         ]),
-//     CommonLootModifiers.addWithChance(<item:nether_remastered:seal_piece_1> % 40)
-// );
+loot.modifiers.register(
+    "add_seal_shard_4",
+    LootConditions.anyOf([
+        LootTableIdLootCondition.create(<resource:nova_structures:chests/illager_hideout_tresure>),
+        LootTableIdLootCondition.create(<resource:nova_structures:chests/pillager_outpost_treasure>),
+        ]),
+    CommonLootModifiers.addWithChance(<item:nether_remastered:seal_piece_4> % 80)
+);
 
 # Move Corrupted Eye to Adjudicator
 loot.modifiers.register(
@@ -95,24 +110,7 @@ loot.modifiers.register(
     CommonLootModifiers.remove(<item:endrem:corrupted_eye>)
 );
 
-// loot.modifiers.register(
-//     "add_corrupted_eye_rare",
-//     LootConditions.anyOf([
-//         LootTableIdLootCondition.create(<resource:takesapillage:chests/bastille/center>),
-//         LootTableIdLootCondition.create(<resource:takesapillage:chests/bastille/farm>),
-//         ]),
-//     CommonLootModifiers.addWithChance(<item:endrem:corrupted_eye> % 30)
-// );
-
-// loot.modifiers.register(
-//     "add_corrupted_eye_uncommon",
-//     LootConditions.anyOf([
-//         LootTableIdLootCondition.create(<resource:takesapillage:chests/bastille/church>),
-//         LootTableIdLootCondition.create(<resource:takesapillage:chests/bastille/gallows>),
-//         LootTableIdLootCondition.create(<resource:takesapillage:chests/bastille/graveyard>),
-//         ]),
-//     CommonLootModifiers.addWithChance(<item:endrem:corrupted_eye> % 60)
-// );
+# The Adjudicator loot table is modified in KubeJS datapack
 
 # Jungle Eye moved to Temple Treasure
 loot.modifiers.register(
@@ -154,7 +152,7 @@ loot.modifiers.register(
     CommonLootModifiers.remove(<item:endrem:cold_eye>)
 );
 
-# Move Lost Eye removal
+# Lost Eye removal
 loot.modifiers.register(
     "remove_lost_eye",
     LootConditions.anyOf([
@@ -164,13 +162,6 @@ loot.modifiers.register(
     CommonLootModifiers.remove(<item:endrem:lost_eye>)
 );
 
-// loot.modifiers.register(
-//     "add_cold_eye",
-//     LootConditions.anyOf([
-//         LootTableIdLootCondition.create(<resource:friendsandfoes:barrels/iceologer_cabin>),
-//         ]),
-//     CommonLootModifiers.addWithChance(<item:endrem:cold_eye> % 20)
-// );
 
 # Move the Ravager horn to the mansion chest
 loot.modifiers.register(

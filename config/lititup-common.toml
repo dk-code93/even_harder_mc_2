@@ -90,7 +90,7 @@
 	#Allow the bone meal item to spawn switchgrass once in a while.
 	Switchgrass_Bone_Meal = true
 	#Add the Golden Lighter to selected loots (mineshafts, village toolsmith, buried treasure, desert pyramid).
-	Golden_Lighter_Loot = true
+	Golden_Lighter_Loot = false
 	#Chance for the Golden Lighter to appear in its designated loot spots (0.0 = never, 1.0 = always).
 	#Range: 0.0 ~ 1.0
 	Golden_Lighter_Loot_Chance = 0.3
