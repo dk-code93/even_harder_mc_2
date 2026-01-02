@@ -86,7 +86,7 @@
       "required_game_stage": "expert"
     },
     "creeper_explode_behind_wall": {
-      "is_enabled": true,
+      "is_enabled": false,
       "required_game_stage": "expert",
       "chance": 1.0,
       "is_scaled_by_crd": false
@@ -148,7 +148,7 @@
       "is_scaled_by_crd": true
     },
     "double_loot": {
-      "is_enabled": true,
+      "is_enabled": false,
       "chance": {
         "__default": 0.0,
         "expert": 0.05,
@@ -221,6 +221,14 @@
           {
             "type": "minecraft:skeleton",
             "equipment": "majruszsdifficulty:mob_groups/skeleton_leader"
+          },
+          {
+            "type": "minecraft:stray",
+            "equipment": "majruszsdifficulty:mob_groups/skeleton_leader"
+          },
+          {
+            "type": "ntrials:bogged",
+            "equipment": "majruszsdifficulty:mob_groups/skeleton_leader"
           }
         ],
         "sidekicks_count": {
@@ -248,6 +256,10 @@
             "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton"
           },
           {
+            "type": "ntrials:bogged",
+            "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton"
+          },
+          {
             "type": "minecraft:zombie",
             "equipment": "majruszsdifficulty:undead_army/wave_3_mob"
           },
@@ -267,6 +279,10 @@
           },
           {
             "type": "minecraft:stray",
+            "equipment": "majruszsdifficulty:undead_army/wave_2_mob"
+          },
+          {
+            "type": "ntrials:bogged",
             "equipment": "majruszsdifficulty:undead_army/wave_2_mob"
           },
           {

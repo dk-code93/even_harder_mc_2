@@ -419,3 +419,27 @@ for animal in fattyAnimals {
     <tag:entity_types:delightful:fatty_animals>.add(animal);
 }
 <tag:entity_types:delightful:drops_ham>.add(<entitytype:eanimod:enhanced_pig>);
+
+# Headshot Whitelist
+
+val headshots = [ 
+    <entitytype:majruszsdifficulty:tank>,
+    <entitytype:majruszsdifficulty:cerberus>,
+    <entitytype:majruszsdifficulty:creeperling>,
+    <entitytype:majruszsdifficulty:giant>,
+    <entitytype:majruszsdifficulty:illusioner>,
+    <entitytype:takesapillage:archer>,
+    <entitytype:takesapillage:skirmisher>,
+    <entitytype:takesapillage:legioner>,
+    <entitytype:progressivebosses:wither>,
+    <entitytype:ntrials:bogged>,
+    <entitytype:ntrials:breeze>,
+    <entitytype:ntrials:breeze_boss>,
+    <entitytype:biomemakeover:adjudicator>,
+    <entitytype:friendsandfoes:iceologer>,
+    <entitytype:friendsandfoes:wildfire>,
+] as EntityType<Entity>[];
+
+for mob in headshots {
+    <tag:entity_types:archeryexp:headshot_whitelist>.add(mob);
+}
