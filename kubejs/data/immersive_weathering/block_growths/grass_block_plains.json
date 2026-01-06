@@ -60,7 +60,7 @@
               "Name": "minecraft:pumpkin"
             }
           },
-          "weight": 1
+          "weight": 0
         },
         {
           "data": {
@@ -79,7 +79,7 @@
               "Name": "minecraft:grass"
             }
           },
-          "weight": 100
+          "weight": 95
         }
       ]
     }
