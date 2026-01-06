@@ -1,7 +1,7 @@
 [
     {
         "mob": "ntrials:bogged",
-        "attempts": 20,
+        "attempts": 12,
         "conditions": {
             "dimension": "minecraft:overworld",
             "validspawn": true,
