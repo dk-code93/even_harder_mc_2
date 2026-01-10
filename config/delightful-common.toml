@@ -163,9 +163,9 @@
 	source_berry_milkshake = true
 	stuffed_cantaloupe = true
 	stuffed_cantaloupe_block = true
-	venison_chops = true
-	venison_stew = true
-	venison_stew_cup = true
+	venison_chops = false
+	venison_stew = false
+	venison_stew_cup = false
 	wild_salmonberries = true
 	wrapped_cantaloupe = true
 	yucca_fruit_crate = true
