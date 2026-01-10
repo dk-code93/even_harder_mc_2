@@ -921,7 +921,7 @@
 	#Armor slows down the player. Enchantment Weights are controlled via json in this feature's folder. Please note that default mods' armor slowdown is done through item definitions within the combat_rework data pack
 	"Enable Weighted armor" = false
 	#Players's slowed down when walking backwards.
-	"Enable Backwards slowdown" = true
+	"Enable Backwards slowdown" = false
 	#Prevents the player from placing blocks below him when in mid air.
 	"Enable No pillaring" = true
 	"Enable Swimming" = true
@@ -1166,7 +1166,7 @@
 	#Make food, items and blocks less stackable. Items and Blocks are disabled by default. Changing stuff requires a /reload, but might require a Minecraft restart.
 	[Items."Stack sizes"]
 		#The formula to calculate the stack size of a food item. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. Set to empty to disable this. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
-		"Food stack reduction formula" = "ROUND(MAX(64 / MAX(hunger, 1), 1), 0)"
+		"Food stack reduction formula" = ""
 		#Items max stack sizes (excluding blocks) will be multiplied by this value. Foods will be overridden by 'Food Stack Reduction' or 'Food Stack Multiplier' if are active. Setting to 1 will disable this feature.
 		#Range: 0.01 ~ 64.0
 		"Item Stack Multiplier" = 1.0
