@@ -76,7 +76,7 @@
 		# Modifies the light level of items. Allows for adding modded items. Set the light to -1 to unregister it.
 		# Example: ["minecraft:torch=14", "minecraft:diamond=10"]
 		# Default: []
-		itemBrightnessOverrides = []
+		itemBrightnessOverrides = ["hardcore_torches:unlit_campfire=-1"]
 		#
 		# Determines if items in the world emit light.
 		# Default: true
