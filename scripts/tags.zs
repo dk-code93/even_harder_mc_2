@@ -252,6 +252,18 @@ val OnePoint = [
     <item:endersdelight:mite_crust>,
     <item:endersdelight:shulker_mollusk>,
     <item:endersdelight:shulker_filet>,
+    <item:eanimod:rawrabbit_small>,
+    <item:eanimod:cookedrabbit_small>,
+    <item:eanimod:rawchicken_darksmall>,
+    <item:eanimod:rawchicken_dark>,
+    <item:eanimod:rawchicken_darkbig>,
+    <item:eanimod:cookedchicken_darksmall>,
+    <item:eanimod:cookedchicken_dark>,
+    <item:eanimod:cookedchicken_darkbig>,
+    <item:eanimod:rawchicken_palesmall>,
+    <item:eanimod:rawchicken_pale>,
+    <item:eanimod:cookedchicken_palesmall>,
+    <item:eanimod:cookedchicken_pale>,
 ] as IItemStack[];
 
 for item in OnePoint {
@@ -318,6 +330,7 @@ for item in ThreePoints {
 
 val FourPoints = [
     <item:minecraft:rabbit_stew>,
+    <item:eanimod:rabbitstew_weak>,
     <item:delightful:cactus_chili>,
     <item:delightful:berry_matcha_latte>,
     <item:delightful:cantaloupe_bread>,
