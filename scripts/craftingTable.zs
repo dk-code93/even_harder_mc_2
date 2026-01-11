@@ -283,3 +283,14 @@ craftingTable.addShaped("parachute", <item:spelunkery:parachute>, [
 craftingTable.addShapeless("sparker", <item:lititup:sparkling_flint>, [
     <item:farmersdelight:straw>, <item:minecraft:flint>, <item:minecraft:stick>
 ]);
+
+# Mud recipe, because I hate the bottle thing
+val anyDirt = <tag:items:minecraft:dirt>;
+
+craftingTable.addShapeless("mud", <item:minecraft:mud>, [
+    anyDirt, waterBottle.transformReplace(<item:minecraft:glass_bottle>)
+]);
+
+craftingTable.addShapeless("mud_bucket", <item:minecraft:mud> * 3, [
+   <item:minecraft:water_bucket>, anyDirt, anyDirt, anyDirt
+]);
