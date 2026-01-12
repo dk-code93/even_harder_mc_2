@@ -1,6 +1,6 @@
 {
     "block": "minecraft:pumpkin_stem",
-    "growth_multiplier": 2,
+    "growth_multiplier": 5,
     "modifiers": [
         {
             "id": "iguanatweaksreborn:sunlight",
