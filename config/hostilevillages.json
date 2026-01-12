@@ -5,7 +5,7 @@
   },
   "hostilePopulationSize": {
     "desc:": "Set higher to increase the generated population of the hostile village, default: 5",
-    "hostilePopulationSize": 3
+    "hostilePopulationSize": 4
   },
   "generateLoot": {
     "desc:": "Whether to generate extra loot for the village, default: true",
