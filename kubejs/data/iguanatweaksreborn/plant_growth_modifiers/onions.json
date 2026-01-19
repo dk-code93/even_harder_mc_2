@@ -1,6 +1,6 @@
 {
     "block": "farmersdelight:onions",
-    "growth_multiplier": 7,
+    "growth_multiplier": 5,
     "modifiers": [
         {
             "id": "iguanatweaksreborn:sunlight",

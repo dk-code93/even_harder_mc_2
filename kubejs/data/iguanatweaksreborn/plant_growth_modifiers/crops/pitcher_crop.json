@@ -1,6 +1,6 @@
 {
     "block": "minecraft:pitcher_crop",
-    "growth_multiplier": 5,
+    "growth_multiplier": 3,
     "modifiers": [
         {
             "id": "iguanatweaksreborn:sunlight",

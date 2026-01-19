@@ -1,6 +1,6 @@
 {
     "block": "#farmersdelight:rice_crops",
-    "growth_multiplier": 7,
+    "growth_multiplier": 5,
     "modifiers": [
         {
             "id": "iguanatweaksreborn:sunlight",

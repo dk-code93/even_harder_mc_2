@@ -1,19 +1,11 @@
 {
     "block": "minecraft:carrots",
-    "growth_multiplier": 7,
+    "growth_multiplier": 5,
     "modifiers": [
         {
             "id": "iguanatweaksreborn:sunlight",
             "min_sunlight": 10,
             "modifier": 2,
-            "operation": "add"
-        },
-        {
-            "id": "iguanatweaksreborn:matches_biome",
-            "biomes": [
-                "#forge:is_cold"
-            ],
-            "modifier": 1.5,
             "operation": "add"
         },
         {

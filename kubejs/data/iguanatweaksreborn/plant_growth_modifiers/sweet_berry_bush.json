@@ -9,20 +9,6 @@
             "operation": "add"
         },
         {
-            "id": "iguanatweaksreborn:night_time",
-            "modifier": 1.5,
-            "operation": "add"
-        },
-        {
-            "id": "iguanatweaksreborn:matches_biome",
-            "biomes": [
-                "#forge:is_taiga"
-            ],
-            "inverse": true,
-            "modifier": 3,
-            "operation": "add"
-        },
-        {
             "id": "iguanatweaksreborn:season",
             "seasons": [
                 "SUMMER",
@@ -37,7 +23,7 @@
                 "AUTUMN"
             ],
             "modifier": 2,
-            "operation": "multiply"
+            "operation": "add"
         }
     ]
 }

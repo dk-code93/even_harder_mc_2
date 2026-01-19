@@ -1,16 +1,11 @@
 {
     "block": "minecraft:melon_stem",
-    "growth_multiplier": 7,
+    "growth_multiplier": 4,
     "modifiers": [
         {
             "id": "iguanatweaksreborn:sunlight",
             "min_sunlight": 10,
-            "modifier": 2.5,
-            "operation": "add"
-        },
-        {
-            "id": "iguanatweaksreborn:night_time",
-            "modifier": 1.5,
+            "modifier": 2,
             "operation": "add"
         },
         {
