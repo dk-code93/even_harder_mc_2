@@ -1,6 +1,6 @@
 {
     "block": "minecraft:carrots",
-    "growth_multiplier": 5,
+    "growth_multiplier": 7,
     "modifiers": [
         {
             "id": "iguanatweaksreborn:sunlight",

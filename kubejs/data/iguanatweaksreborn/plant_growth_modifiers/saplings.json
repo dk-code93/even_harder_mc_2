@@ -12,14 +12,6 @@
             "id": "iguanatweaksreborn:night_time",
             "modifier": 1.5,
             "operation": "add"
-        },
-        {
-            "id": "iguanatweaksreborn:season",
-            "seasons": [
-                "WINTER"
-            ],
-            "modifier": -1,
-            "operation": "multiply"
         }
     ]
 }

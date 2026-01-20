@@ -1,6 +1,6 @@
 {
     "block": "minecraft:beetroots",
-    "growth_multiplier": 5,
+    "growth_multiplier": 6,
     "modifiers": [
         {
             "id": "iguanatweaksreborn:sunlight",
