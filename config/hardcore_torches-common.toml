@@ -42,10 +42,10 @@
 [torch]
 	#How long a torch lasts when crafted. There are 20 ticks per second so 48000 ticks = 40 minutes.
 	#Range: > 1
-	defaultTorchFuel = 48000
+	defaultTorchFuel = 168000
 	#How long a soul torch can last without being refilled, in ticks.
 	#Range: > 1
-	defaultSoulTorchFuel = 72000
+	defaultSoulTorchFuel = 240000
 	#Torches will become unlit when broken.
 	torchesExtinguishWhenBroken = true
 	#Overrides torchesExtinguishWhenBroken. Torches will be fully expended when broken (burnt torch or stick).
@@ -59,7 +59,7 @@
 	#If true, torches must be lit after crafting.
 	craftUnlit = true
 	#Right click a torch without holding fuel or a lighter to unlight it.
-	handUnlightTorch = false
+	handUnlightTorch = true
 	#0: When going underwater, torches in your inventory will be unaffected
 	#1: When going underwater, torches in mainhand or offhand will be extinguished
 	#2: When going underwater, torches in inventory will be extinguished
@@ -77,9 +77,9 @@
 	#1: Right-click torches while sneaking to pick them up
 	#2: Torches cannot be picked up by right-clicking
 	#Range: 0 ~ 2
-	takeTorchMode = 2
+	takeTorchMode = 0
 	#When a torch burns out it will become unlit, and when you light a torch, it will be fully refueled.
-	relightTorches = true
+	relightTorches = false
 
 #Lantern Settings
 [lantern]
