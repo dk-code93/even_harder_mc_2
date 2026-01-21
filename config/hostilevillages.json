@@ -36,10 +36,12 @@
   "villageEntityTypes": {
     "desc:": "List of entity pairs which spawn in villages. Format = entity1;entity2;5;6   5 is the chance of entity2(one in five), 6 is the total weight of this whole entry to be chosen",
     "villageEntityTypes": [
-      "minecraft:pillager;minecraft:witch;6;5",
-      "minecraft:witch;minecraft:vindicator;4;3", 
-      "takesapillage:archer;minecraft:illusioner;6;5",
-      "minecraft:pillager;minecraft:illusioner;6;5"
+      "minecraft:pillager;minecraft:witch;4;5",
+      "minecraft:witch;minecraft:vindicator;4;4", 
+      "minecraft:witch;takesapillage:legioner;4;4", 
+      "takesapillage:archer;takesapillage:skirmisher;3;4",
+      "takesapillage:archer;minecraft:illusioner;6;3",
+      "minecraft:pillager;minecraft:illusioner;6;3"
     ]
   },
   "additionalStructures": {
