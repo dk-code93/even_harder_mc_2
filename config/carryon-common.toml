@@ -57,7 +57,7 @@
 [whitelist]
 	#Whitelist. Read about the format here: https://github.com/Tschipp/CarryOn/wiki/Black---and-Whitelist-Config
 	#Entities that CAN be picked up (useWhitelistEntities must be true)
-	allowedEntities = ["minecraft:axolotl", "minecraft:chicken", "minecraft:rabbit", "minecraft:fox", "minecraft:bat", "minecraft:bee", "minecraft:cat", "minecraft:ocelot", "minecraft:parrot", "minecraft:salmon", "minecraft:cod", "minecraft:tropical_fish", "minecraft:frog", "minecraft:tadpole", "friendsandfoes:copper_golem", "friendsandfoes:tuff_golem", "friendsandfoes:crab"]
+	allowedEntities = ["minecraft:axolotl", "minecraft:chicken", "minecraft:rabbit", "minecraft:fox", "minecraft:bat", "minecraft:bee", "minecraft:cat", "minecraft:ocelot", "minecraft:parrot", "minecraft:salmon", "minecraft:cod", "minecraft:tropical_fish", "minecraft:frog", "minecraft:tadpole", "friendsandfoes:copper_golem", "friendsandfoes:tuff_golem", "friendsandfoes:crab", "eanimod:enhanced_chicken", "eanimod:enhanced_rabbit", "eanimod:enhanced_turtle", "eanimod:enhanced_axolotl"]
 	#Blocks that CAN be picked up (useWhitelistBlocks must be true)
 	allowedBlocks = []
 	#Entities that CAN have other entities stacked on top of them (useWhitelistStacking must be true)
