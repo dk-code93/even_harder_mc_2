@@ -20,7 +20,7 @@
 	enabled = true
 
 [cracked_blocks]
-	cracking_drops_brick = false
+	cracking_drops_brick = true
 	#Range: 0.0 ~ 1.0
 	interest_for_face = 0.6
 	#Range: 0.0 ~ 1.0
