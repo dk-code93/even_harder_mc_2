@@ -12,6 +12,7 @@
 !kubejs/*/*/*/*/*/*
 !kubejs/*/*/*/*/*/*/*
 !kubejs/*/*/*/*/*/*/*/*
+!kubejs/*/*/*/*/*/*/*/*/*
 !config
 !config/*
 !config/*/*
