@@ -17,7 +17,7 @@
 	#If true, you can light torches and lanterns within the crafting inventory.
 	craftLight = true
 	#If true, replace torches, lanterns, etc. in loot tables with unlit versions.
-	replaceInLootTables = true
+	replaceInLootTables = false
 
 #Oil Can Settings
 [oil_can]

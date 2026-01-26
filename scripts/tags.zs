@@ -60,8 +60,8 @@ for ingredient in fleshCookables {
 
 <tag:items:minecraft:planks>.remove(<item:spelunkery:conk_fungus>);
 
-#Animal fat makes fire infinite
-<tag:items:unlitcampfire:makes_campfire_infinite>.add(<item:delightful:animal_oil_bottle>);
+// #Animal fat makes fire infinite
+// <tag:items:unlitcampfire:makes_campfire_infinite>.add(<item:delightful:animal_oil_bottle>);
 
 # Seal Pieces
 val sealPieces = [
@@ -455,4 +455,14 @@ val headshots = [
 
 for mob in headshots {
     <tag:entity_types:archeryexp:headshot_whitelist>.add(mob);
+}
+
+# Animal Fats
+
+val fatty = [
+    <item:delightful:animal_fat>,
+] as IItemStack[];
+
+for item in fatty {
+    <tag:items:minecraft:animal_fat>.add(item);
 }
