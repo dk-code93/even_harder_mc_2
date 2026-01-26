@@ -61,6 +61,11 @@ val craftingRemovalByItem = [
     <item:endrem:exotic_eye>,
     <item:endrem:undead_eye>,
     # Equipment
+    # Arrows
+    <item:archeryexp:iron_arrow>,
+    <item:archeryexp:gold_arrow>,
+    <item:archeryexp:diamond_arrow>,
+    <item:archeryexp:netherite_arrow>,
     # Misc
     <item:farmersdelight:wheat_dough>,
     <item:sleep_tight:night_bag>,

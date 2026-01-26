@@ -294,3 +294,26 @@ craftingTable.addShapeless("mud", <item:minecraft:mud>, [
 craftingTable.addShapeless("mud_bucket", <item:minecraft:mud> * 3, [
    <item:minecraft:water_bucket>, anyDirt, anyDirt, anyDirt
 ]);
+
+# New Arrows
+val arrow = <item:minecraft:arrow>;
+
+val arrowStuff = {
+    <item:minecraft:iron_nugget>: <item:archeryexp:iron_arrow>,
+    <item:minecraft:gold_nugget>: <item:archeryexp:gold_arrow>,
+    <item:spelunkery:diamond_shard>: <item:archeryexp:diamond_arrow>,
+} as IItemStack[IItemStack];
+
+for nugget, newArrow in arrowStuff {
+    craftingTable.addShaped("custom_" + newArrow.descriptionId, newArrow, [
+        [nugget, nugget],
+        [arrow, nugget]
+    ]);
+}
+
+val dArrow = <item:archeryexp:diamond_arrow>;
+craftingTable.addShaped("custom_netherite_arrow", <item:archeryexp:netherite_arrow> * 8, [
+    [dArrow, dArrow, dArrow],
+    [dArrow, <item:minecraft:netherite_ingot>, dArrow],
+    [dArrow, dArrow, dArrow]
+]);
