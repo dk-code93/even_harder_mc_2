@@ -15,7 +15,7 @@
 	#Range: > 1
 	bottleExpAmount = 15
 	#If true, you can light torches and lanterns within the crafting inventory.
-	craftLight = true
+	craftLight = false
 	#If true, replace torches, lanterns, etc. in loot tables with unlit versions.
 	replaceInLootTables = false
 
