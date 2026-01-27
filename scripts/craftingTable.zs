@@ -299,15 +299,17 @@ craftingTable.addShapeless("mud_bucket", <item:minecraft:mud> * 3, [
 val arrow = <item:minecraft:arrow>;
 
 val arrowStuff = {
-    <item:minecraft:iron_nugget>: <item:archeryexp:iron_arrow>,
-    <item:minecraft:gold_nugget>: <item:archeryexp:gold_arrow>,
-    <item:spelunkery:diamond_shard>: <item:archeryexp:diamond_arrow>,
-} as IItemStack[IItemStack];
+    "iron_ingot": [<item:minecraft:iron_nugget>, <item:archeryexp:iron_arrow>],
+    "gold_ingot": [<item:minecraft:gold_nugget>, <item:archeryexp:gold_arrow>],
+    "diamond": [<item:spelunkery:diamond_shard>, <item:archeryexp:diamond_arrow>],
+} as IItemStack[][string];
 
-for nugget, newArrow in arrowStuff {
-    craftingTable.addShaped("custom_" + newArrow.descriptionId, newArrow, [
-        [nugget, nugget],
-        [arrow, nugget]
+for material, items in arrowStuff {
+    craftingTable.addShapeless("custom." + items[1].descriptionId + ".1", items[1], [
+        items[0], items[0], arrow, items[0]
+    ]);
+    craftingTable.addShapeless("custom." + items[1].descriptionId + ".2", items[1] * 3, [
+        arrow, <item:minecraft:${material}>, arrow, arrow
     ]);
 }
 
