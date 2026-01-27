@@ -43,7 +43,7 @@ craftingTable.addShaped('hardcore_blast_furnace', <item:minecraft:blast_furnace>
 
 craftingTable.addShaped('hardcore_blackstone_furnace', <item:nethersdelight:blackstone_furnace>, [
     [blackstone, blackstone, blackstone],
-    [blackstone, campfire, blackstone],
+    [copper, campfire, copper],
     [blackstone, blackstone, blackstone]
 ]);
 
@@ -153,10 +153,35 @@ craftingTable.addShaped("wither_skull", <item:minecraft:wither_skeleton_skull>, 
 
 # Lighting Changes
 val litTorch = <item:hardcore_torches:lit_torch>;
+val magmaCream = <item:minecraft:magma_cream>;
 val torch = <item:minecraft:torch>;
+val stick = <item:minecraft:stick>;
+val anyLog = <tag:items:minecraft:logs>;
+val coal = <tag:items:minecraft:coals>;
+
+craftingTable.addShaped("cream_campfire", <item:minecraft:campfire>, [
+    [magmaCream, stick, magmaCream],
+    [stick, coal, stick],
+    [anyLog, anyLog, anyLog]
+]);
+
+craftingTable.addShaped("glow_campfire", <item:minecraft:campfire>, [
+    [glowDust, stick, glowDust],
+    [stick, coal, stick],
+    [anyLog, anyLog, anyLog]
+]);
+
+craftingTable.addShapeless("custom_soul_campfire", <item:minecraft:soul_campfire>, [
+    <item:minecraft:campfire>, soulBlocks
+]);
 
 craftingTable.addShaped("glow_torches", torch,  [
     [glowDust],
+    [litTorch]
+]);
+
+craftingTable.addShaped("cream_torches", torch,  [
+    [magmaCream],
     [litTorch]
 ]);
 
@@ -178,6 +203,15 @@ craftingTable.addShapeless("jam_torches", torch * 3, [
 craftingTable.addShaped("new_soul_torch", <item:minecraft:soul_torch>, [
     [torch],
     [soulBlocks]
+]);
+
+# Magma Cream for overworld crafting
+val magmaPebble = <item:spelunkery:magma_pebble>;
+
+craftingTable.addShaped("magma_cream_with_pebble", magmaCream, [
+    [empty, magmaPebble, empty],
+    [magmaPebble, <item:minecraft:slime_ball>, magmaPebble],
+    [empty, magmaPebble, empty],
 ]);
 
 # Bread Dough

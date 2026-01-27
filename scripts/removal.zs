@@ -15,6 +15,8 @@ val craftingRemovalByName = [
     "minecraft:bread",
     "minecraft:torch",
     "minecraft:blast_furnace",
+    "minecraft:soul_campfire",
+    "minecraft:glowstone_campfire",
     "naturescompass:natures_compass",
     "delightful:torch_from_animal_oil_bottle",
     "delightful:candle_from_animal_fat",
@@ -22,6 +24,7 @@ val craftingRemovalByName = [
     "biomemakeover:phantom_membrane",
     "nyfsquiver:gold_quiver_item_craft",
     "nyfsquiver:diamond_quiver_item_craft",
+    "hardcore_torches:light_torch_consume_item",
     // "map_atlases:craft_atlas",
     # Working Stations
     "minecraft:furnace",
