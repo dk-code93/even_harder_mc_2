@@ -227,10 +227,8 @@ craftingTable.addShapedMirrored("egg_dough", MirrorAxis.ALL, <item:farmersdeligh
     [wheat, <tag:items:forge:eggs>]
 ]);
 
-craftingTable.addShaped("water_bucket_dough", <item:farmersdelight:wheat_dough> * 3, [
-    [wheat, wheat, wheat], 
-    [wheat, <item:minecraft:water_bucket>, wheat],
-    [wheat, wheat, wheat], 
+craftingTable.addShapeless("water_bucket_dough", <item:farmersdelight:wheat_dough> * 2, [
+    <item:minecraft:water_bucket>, wheat, wheat, wheat, wheat, wheat, wheat
 ]);
 
 # Terracotta Bricks Integration

@@ -13,6 +13,7 @@ import crafttweaker.api.text.FormattedText;
 val craftingRemovalByName = [
     # Misc
     "minecraft:bread",
+    "farmersdelight:wheat_dough_from_water",
     "minecraft:torch",
     "minecraft:blast_furnace",
     "minecraft:soul_campfire",
