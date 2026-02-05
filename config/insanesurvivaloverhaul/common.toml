@@ -1039,7 +1039,7 @@
 		#Range: > 0
 		"Regen when food above" = 6
 		#Set to true to disable the health regen boost given when max hunger and saturation (false in Vanilla).
-		"Disable saturation regen boost" = false
+		"Disable saturation regen boost" = true
 		#Set to true to consume Hunger only (and not saturation) when regenerating health (false for Vanilla).
 		"Consume hunger only" = false
 		#Vanilla consumes 1 saturation or hunger whenever Exhaustion reaches 4.0. You can change that value with this config option. NOTE that Minecraft caps this value to 40.
@@ -1092,9 +1092,9 @@
 	#Changes to food nourishment and the speed on how food is eaten or how items are consumed. Custom Food Properties are controlled via json in this feature's folder.
 	["Hunger & Health"."Foods & Drinks"]
 		#Food's hunger restored will be calculated from this formula. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Can be re-applied with /reload
-		"Food hunger formula" = ""
+		"Food hunger formula" = "hunger * 0.7"
 		#Food's saturation multiplier will be calculated from this formula. This is not a flat value: https://minecraft.wiki/w/Hunger#Food_level_and_saturation_level_restoration. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. Setting this to an empty string disables the feature. Can be re-applied with /reload
-		"Food Saturation Modifier Formula" = ""
+		"Food Saturation Modifier Formula" = "saturation_modifier * 0.6"
 		#Makes potions and, milk faster to drink, 1 second instead of 1.6.
 		"Faster drink consuming" = true
 		#The formula to calculate the ticks required to eat a food. Variables as hunger, saturation_modifier, effectiveness as numbers and fast_food as boolean can be used. This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html. The default formula increases the time to eat exponentially when higher effectiveness. Empty to disable
@@ -1335,7 +1335,7 @@
 		#If true, the spawner delay is set to 'Delay' instead of using MinSpawnDelay and MaxSpawnDelay
 		"Override spawn delay" = true
 		#Range in which a player must be present for a spawner to work. Vanilla is 16.
-		"Required player range" = 32
+		"Required player range" = 16
 		#If true, monsters from spawners will spawn no matter the light level.
 		"Ignore light" = true
 		#If true, disabled spawners can be re-enabled with a spawner reactivator item defined in the `iguanatweaksreborn:spawner_reactivator` item tag. These items get a new tooltip mentioning that they can be used to re-enable spawners.
@@ -1438,14 +1438,14 @@
 		#* Sets the starting season to the one in 'Starting season'
 		"Change serene seasons config" = true
 		#Removes greenhouse glass.
-		"No green house glass" = true
+		"No green house glass" = false
 		#Changes what leaves can drop in different seasons.
 		#Sapling no longer drop in winter
 		#Apples only drop in spring
-		"Leaves drops" = true
+		"Leaves drops" = false
 		#Has no effect if 'Serene Seasons changes' is disabled
 		#Allowed Values: EARLY_SPRING, MID_SPRING, LATE_SPRING, EARLY_SUMMER, MID_SUMMER, LATE_SUMMER, EARLY_AUTUMN, MID_AUTUMN, LATE_AUTUMN, EARLY_WINTER, MID_WINTER, LATE_WINTER
-		"Starting season" = "EARLY_SUMMER"
+		"Starting season" = "EARLY_SPRING"
 		#How many minutes will day and night duration be (with this set to 10 the day will last 10 minutes and the night 10 minutes for a grand total of 20 minutes). This also adjusts the day_duration config option in Serene Seasons. Vanilla is 10. Requires Time Control mod
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Time control day night duration" = 15.0
@@ -1453,8 +1453,8 @@
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Time control day night shift" = 1.5
 		"Slowdown grass spreading" = true
-		"Season based fishing time" = true
-		"Grow double tall grass" = true
+		"Season based fishing time" = false
+		"Grow double tall grass" = false
 		"Grow flowers from grass" = false
 
 [Experience]

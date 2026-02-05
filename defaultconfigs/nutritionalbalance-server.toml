@@ -24,7 +24,7 @@
 		nutrient_level_max = 220.0
 		#Nutrient Increment Rate - rate of nutrient increase relative to food saturation and points. (default:1.0)
 		#Range: 0.0 ~ 1.7976931348623157E308
-		nutrient_increment_rate = 0.5
+		nutrient_increment_rate = 0.6
 		#Nutrient Decay Rate - base rate of nutrient reduction over time relative to player saturation and food level decay. (default:1.0)
 		#Range: 0.0 ~ 1.7976931348623157E308
 		nutrient_decay_rate = 0.5
