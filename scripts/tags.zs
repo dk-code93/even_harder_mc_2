@@ -110,6 +110,7 @@ val tagsToRemove = [
     <tag:worldgen/biome:immersive_weathering:has_loam>,
     <tag:worldgen/biome:immersive_weathering:has_earthen_clay>,
     <tag:worldgen/biome:immersive_weathering:has_silt>,
+    <tag:items:iguanatweaksreborn:hud/time>,
 ] as MCTag[];
 
 for tag in tagsToRemove {
