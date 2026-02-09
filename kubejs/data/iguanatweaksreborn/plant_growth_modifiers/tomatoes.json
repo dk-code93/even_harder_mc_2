@@ -1,6 +1,6 @@
 {
     "block": "#farmersdelight:tomato_crops",
-    "growth_multiplier": 6,
+    "growth_multiplier": 8,
     "modifiers": [
         {
             "id": "iguanatweaksreborn:sunlight",
@@ -11,8 +11,7 @@
         {
             "id": "iguanatweaksreborn:season",
             "seasons": [
-                "SPRING",
-                "WINTER",
+                "SUMMER",
                 "AUTUMN"
             ],
             "modifier": -1,
