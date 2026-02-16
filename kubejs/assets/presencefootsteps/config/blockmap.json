@@ -1,3 +1,4 @@
 {
-    "immersive_weathering:grassy_permafrost": "grass"
+    "immersive_weathering:grassy_permafrost": "grass",
+    "spelunkery:tangle_roots_block": "rug,leaves"
 }
