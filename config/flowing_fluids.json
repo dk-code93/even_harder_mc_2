@@ -28,7 +28,7 @@
   "waterFlowAffectsBoats": false,
   "waterFlowAffectsEntities": false,
   "waterFlowAffectsPlayers": false,
-  "waterFlowAffectsItems": false,
+  "waterFlowAffectsItems": true,
   "infiniteWaterBiomeNonConsumeChance": 0.1,
   "infiniteWaterBiomeDrainSurfaceChance": 0.3,
   "minWaterLevelForIce": 4,
