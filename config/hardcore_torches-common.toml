@@ -36,7 +36,7 @@
 	#2: Both enabled
 	#3: Disable recipes (You must provide custom JSON files, open the mod JAR to see format)
 	#Range: 0 ~ 3
-	oilRecipeType = 0
+	oilRecipeType = 2
 
 #Torch Settings
 [torch]
