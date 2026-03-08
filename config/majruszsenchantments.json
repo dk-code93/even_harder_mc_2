@@ -59,10 +59,10 @@
       "is_enabled": true
     },
     "horse_frost_walker": {
-      "is_enabled": true
+      "is_enabled": false
     },
     "horse_protection": {
-      "is_enabled": true,
+      "is_enabled": false,
       "armor_bonus_per_level": 2.0
     },
     "horse_swiftness": {
@@ -78,7 +78,7 @@
       "is_enabled": true
     },
     "leech": {
-      "is_enabled": true,
+      "is_enabled": false,
       "health_chance": 0.1,
       "hunger_chance": 0.1,
       "effect_chance": 0.1
