@@ -20,7 +20,7 @@ val leatherHorseArmor = <item:minecraft:leather_horse_armor>;
 villagerTrades.removeAllTrades(leatherworker, 1);
 
 val levelOneBuy = [
-    <item:minecraft:leather> * 16,
+    <item:minecraft:leather> * 8,
     <item:farmersdelight:straw> * 21,
 ] as IItemStack[];
 
@@ -43,10 +43,12 @@ villagerTrades.addTrade(leatherworker, 2, (entity, random) => {
         randomArmor.withTag({display: dyeData["display"], Enchantments: enchantTrade.getResult().getOrCreateTag()["Enchantments"]}), 6, 14, 0.05);
 });
 
-villagerTrades.addTrade(leatherworker, 2, <item:minecraft:phantom_membrane> * 16, emerald, 8, 12, 0.05);
+villagerTrades.addTrade(leatherworker, 2, <item:minecraft:phantom_membrane> * 12, emerald, 8, 12, 0.05);
 
 # Level 3
 villagerTrades.removeAllTrades(leatherworker, 3);
+
+villagerTrades.addTrade(leatherworker, 3, emerald * 8, <item:minecraft:saddle>, 8, 14, 0.05);
 
 villagerTrades.addTrade(leatherworker, 3, (entity, random) => {
     val threeArmorOne = [
@@ -60,34 +62,33 @@ villagerTrades.addTrade(leatherworker, 3, (entity, random) => {
         randomArmor.withTag({display: dyeData["display"], Enchantments: enchantTrade.getResult().getOrCreateTag()["Enchantments"]}), 6, 14, 0.05);
 });
 
-villagerTrades.addTrade(leatherworker, 3, (entity, random) => {
-  return new MerchantOffer(emerald * 12, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1, id: "majruszsenchantments:dodge"}]}), 4, 18, 0.05);
-});
-
-
 # Level 4
 villagerTrades.removeAllTrades(leatherworker, 4);
 
-villagerTrades.addTrade(leatherworker, 4, emerald * 8, <item:minecraft:saddle>, 8, 14, 0.05);
+villagerTrades.addTrade(leatherworker, 4, (entity, random) => {
+  return new MerchantOffer(emerald * 12, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1, id: "majruszsenchantments:dodge"}]}), 4, 18, 0.05);
+});
 
-villagerTrades.addTrade(leatherworker, 4, emerald * 3, <item:farmersdelight:horse_feed>, 6, 18, 0.05);
+villagerTrades.addTrade(leatherworker, 4, <item:minecraft:armadillo_scute> * 6, emerald, 8, 14, 0.05);
 
 # Level 5
 villagerTrades.removeAllTrades(leatherworker, 5);
 
 villagerTrades.addTrade(leatherworker, 5, (entity, random) => {
-    val dyedHorseData = new DyedArmorForEmeralds(<item:minecraft:leather_boots>, 1).getOffer(entity, random).getResult().getOrCreateTag() as IData;
-    val enchantHorseTrade = new EnchantedItemForEmeralds(leatherHorseArmor, 1, 4 , 12, 0.05).getOffer(entity, random) as MerchantOffer;
-    return new MerchantOffer(enchantHorseTrade.getCostA(), 
-        leatherHorseArmor.withTag({display: dyedHorseData["display"], Enchantments: enchantHorseTrade.getResult().getOrCreateTag()["Enchantments"]}), 6, 18, 0.05);
+    val armorColor = new DyedArmorForEmeralds(<item:minecraft:leather_boots>, 1).getOffer(entity, random).getResult().getOrCreateTag() as IData;
+    val enchantments = new EnchantedItemForEmeralds(leatherHorseArmor, 1, 4 , 12, 0.05).getOffer(entity, random) as MerchantOffer;
+    return new MerchantOffer(enchantments.getCostA(), 
+        leatherHorseArmor.withTag({display: armorColor["display"], Enchantments: enchantments.getResult().getOrCreateTag()["Enchantments"]}), 6, 18, 0.05);
 });
 
-villagerTrades.addTrade(leatherworker, 5, (entity, random) => {
-    val threeEnchants = [
-        "majruszsenchantments:horse_protection",
-        "majruszsenchantments:horse_swiftness",
-    ] as string[];
-  return new MerchantOffer(emerald * 6, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2, id: threeEnchants[random.nextInt(2)]}]}), 4, 18, 0.05);
-});
+villagerTrades.addTrade(leatherworker, 5, emerald * 3, <item:farmersdelight:horse_feed>, 6, 18, 0.05);
+
+// villagerTrades.addTrade(leatherworker, 5, (entity, random) => {
+//     val threeEnchants = [
+//         "majruszsenchantments:horse_protection",
+//         "majruszsenchantments:horse_swiftness",
+//     ] as string[];
+//   return new MerchantOffer(emerald * 6, <item:minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2, id: threeEnchants[random.nextInt(2)]}]}), 4, 18, 0.05);
+// });
 
 
