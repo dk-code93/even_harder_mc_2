@@ -32,7 +32,7 @@
 	   Example values:
 	   - `0.5` -50% damage
 	*/
-	"reworked_sweeping_maximum_damage_penalty": 0.5,
+	"reworked_sweeping_maximum_damage_penalty": 0.3,
 	/* The maximum level Sweeping Edge enchantment applied to the attackers weapon will restore this amount of penalty.
 	   Example values:
 	   - `0.5` restores 50% damage penalty when 3 levels are applied, so 16.66% when 1 level is applied
