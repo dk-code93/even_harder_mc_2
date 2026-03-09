@@ -14,5 +14,22 @@
                 ]
             }
         }
+    },
+    {
+        "mob": "minecraft:phantom",
+        "attempts": 1,
+        "persecond": 0.1,
+        "conditions": {
+            "dimension": "minecraft:overworld",
+            "validspawn": true,
+            "inair": true,
+            "minheight": 192,
+            "minverticaldist": 20,
+            "maxverticaldist": 34,
+            "maxdist": 34,
+            "and": {
+                "biometags": "minecraft:is_mountain"
+            }
+        }
     }
 ]

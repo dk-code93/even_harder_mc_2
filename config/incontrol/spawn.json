@@ -14,5 +14,20 @@
                 "biomemakeover:helmit_crab"
             ],
         "result": "deny"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": "minecraft:phantom",
+        "time": "outsideRange(14500,23000)",
+        "result": "deny"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": "minecraft:phantom",
+        "mincount": {
+            "amount": 6,
+            "perplayer": true
+        },
+        "result": "deny"
     }
 ]
