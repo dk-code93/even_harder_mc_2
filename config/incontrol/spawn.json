@@ -29,5 +29,12 @@
             "perplayer": true
         },
         "result": "deny"
+    },
+    {
+        "mob": "majruszsdifficulty:cursed_armor",
+        "when": "onjoin",
+        "speedmultiply": 1.3,
+        "damagemultiply": 1.3,
+        "result": "allow"
     }
 ]
