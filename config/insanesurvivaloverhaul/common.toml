@@ -1473,7 +1473,7 @@
 		#Set to empty to disable.
 		#This is evaluated with EvalEx https://ezylang.github.io/EvalEx/concepts/parsing_evaluation.html.
 		#Incompatible with Allurement's 'Remove level Scaling' or any other mod that does something similar
-		"Level up formula" = "40"
+		"Level up formula" = ""
 		#On death, players will drop this percentage of experience instead of max 7 levels. Setting to -1 will disable this.
 		#Due to Minecraft limitations this is incompatible with other mods that change the level scaling (e.g. Allurement's 'Remove level Scaling').
 		#Range: -1.0 ~ 1.0
