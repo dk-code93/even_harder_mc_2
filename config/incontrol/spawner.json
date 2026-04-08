@@ -23,7 +23,7 @@
             "dimension": "minecraft:overworld",
             "validspawn": true,
             "inair": true,
-            "minheight": 192,
+            "minheight": 150,
             "minverticaldist": 20,
             "maxverticaldist": 34,
             "maxdist": 34,
